@@ -14,10 +14,10 @@
 ---
 ## Table of Contents
 - [About Team👥](#about-team)
-- [Project Overview](#project-overview)
+- [Project Overview🧠](#project-overview)
+- [Timeline🗓️](#timeline)
 - [Robot Design](#robot-design)
-- [Timeline](#timeline)
-- [Gallery](#gallery)
+
 
 ##  About Team👥
 
@@ -67,16 +67,21 @@ in another and grow as future engineers. No matter the challenge, we stay focuse
 
 ---
 
-## 🛠️ Project Highlights
 
-- 🚗 **Self-driving vehicle prototype** — designed for autonomous navigation
-- 📷 **OpenMV integration** for real-time object tracking using computer vision
-- ⚙️ **Custom chassis and mechanical design** — built from scratch for modularity and efficiency
-- 📡 **Lidar sensor adaptation** for enhanced obstacle detection and precision mapping
+## Project Overview🧠
+
+Our goal is clear: **Design, build, and innovate our own self-driving robot.**
+
+We believe in:
+- 🚀 Innovation through experimentation  
+- 💬 Learning through teamwork  
+- 🧩 Problem-solving with creativity  
+- 🛠️ Applying tech to real-world challenges  
+
 
 ---
 
-## 🗓️ Timeline
+## Timeline🗓️
 
 | Phase             | Month       | Goal                                      |
 |------------------|-------------|-------------------------------------------|
@@ -85,6 +90,10 @@ in another and grow as future engineers. No matter the challenge, we stay focuse
 | 🧠 Programming     | August      | Implement PID control and obstacle logic  |
 | 🧪 Testing         | September   | Real-world simulation and debugging        |
 | 🏁 Final Submission| October     | Polish and submit for WRO competition     |
+
+---
+
+## Robot Design
 
 
 
