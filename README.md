@@ -19,7 +19,7 @@
 - [Robot Design](#robot-design)
 
 
-##  About Team👥
+###  About Team👥
 
 Picture
 
@@ -31,7 +31,7 @@ Our team is called **"F1"**, inspired by our shared enthusiasm for **Formula 1 r
 
 <br>
 
-## 🧑‍🤝‍🧑 Meet the Team
+### 🧑‍🤝‍🧑 Meet the Team
 
 | Name       | Role                           | Responsibility                                                                 |
 |------------|--------------------------------|--------------------------------------------------------------------------------|
@@ -43,7 +43,7 @@ Our team is called **"F1"**, inspired by our shared enthusiasm for **Formula 1 r
 
 <br>
 
-## 🤝 How We Work
+### 🤝 How We Work
 
 Even though we come from different age groups, we collaborate seamlessly. Each of us brings **unique strengths** to the team, and our clearly divided roles allow us to stay focused and productive.
 
@@ -54,7 +54,7 @@ We believe in:
 
 <br>
 
-## 💬 Our Mission
+### 💬 Our Mission
 
 > _"We’re not just building robots — we’re building a future."_  
 
