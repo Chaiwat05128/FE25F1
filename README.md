@@ -85,11 +85,11 @@ We believe in:
 
 | Phase             | Month       | Goal                                      |
 |------------------|-------------|-------------------------------------------|
-| 🔍 Research       | May–June    | Understand LIDAR, OpenMV, and line tracking |
+| 🔍 Research       | July    | Understand LIDAR, OpenMV, and line tracking |
 | 🛠️ Prototyping     | July        | Assemble base robot + test sensor input    |
 | 🧠 Programming     | August      | Implement PID control and obstacle logic  |
-| 🧪 Testing         | September   | Real-world simulation and debugging        |
-| 🏁 Final Submission| October     | Polish and submit for WRO competition     |
+| 🧪 Testing         | August   | Real-world simulation and debugging        |
+| 🏁 Final Submission| September    | Polish and submit for WRO competition     |
 
 ---
 
