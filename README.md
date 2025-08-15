@@ -1,4 +1,4 @@
-# 🤖 Team F1 – WRO Future Engineers 2025
+# 🏎️Team F1 – WRO Future Engineers 2025🏁
 </p>
 </p>
 <br>
@@ -15,7 +15,7 @@
 ## Table of Contents
 - [About Team👥](#about-team)
 - [Project Overview🧠](#project-overview)
-- [Timeline🗓️](#timeline)
+- [Timeline 🗓️](#timeline-)
 - [Robot Design](#robot-design)
 
 
@@ -35,7 +35,7 @@ Our team is called **"F1"**, inspired by our shared enthusiasm for **Formula 1 r
 
 | Name       | Role                           | Responsibility                                                                 |
 |------------|--------------------------------|--------------------------------------------------------------------------------|
-| **Chaiwat Chinsupawat** _(myself)_ | 📚 Team Organizer               | Handles documentation, presentations, and manages the team's workflow         |
+| **Chaiwat Chinsupawat**  | 📚 Document Designer               | Handles documentation and presentations        |
 | **Pongpapat Putongkam**          | 🛠️ Mechanic                    | Designs and assembles the robot’s hardware and structural components          |
 | **Peradon Nimsongprasert**            | 💻 Programmer                  | Codes and refines the robot’s software and logic                              |
 
@@ -81,15 +81,17 @@ We believe in:
 
 ---
 
-## Timeline🗓️
 
-| Phase             | Month       | Goal                                      |
-|------------------|-------------|-------------------------------------------|
-| 🔍 Research       | July    | Understand LIDAR, OpenMV, and line tracking |
-| 🛠️ Prototyping     | July        | Assemble base robot + test sensor input    |
-| 🧠 Programming     | August      | Implement PID control and obstacle logic  |
-| 🧪 Testing         | August   | Real-world simulation and debugging        |
-| 🏁 Final Submission| September    | Polish and submit for WRO competition     |
+## Timeline 🗓️
+
+| Phase               | Month     | Goal                                           |
+|---------------------|-----------|------------------------------------------------|
+| 🔍 Research         | July      | Understand LIDAR, OpenMV, and line tracking    |
+| 🛠️ Prototyping      | July      | Assemble base robot + test sensor input        |
+| 🧠 Programming      | August    | Implement PID control and obstacle logic       |
+| 🧪 Testing          | August    | Real-world simulation and debugging            |
+| 🏁 Final Submission | September | Polish and submit for WRO competition          |
+
 
 ---
 
