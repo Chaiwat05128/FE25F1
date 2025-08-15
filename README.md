@@ -127,4 +127,4 @@ Blocked Rotor Current: 900mA
 Slipping Current: 700mA
 
 **Drive and Power Train**
-
+<br>
