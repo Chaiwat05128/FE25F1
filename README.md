@@ -119,16 +119,13 @@ But how do we actually steer the car? The answer is servo motor, specificly the 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/8ade7472-5f16-47c6-a7fc-12747075628e)
 
-
-|Operating Voltage | 3.3V~6V
-
-|Rated Voltage | 4.8V
-
-Rated Current: 70mA
-
-Blocked Rotor Current: 900mA
-
-Slipping Current: 700mA
+|------------------|---------|
+|Operating Voltage | 3.3V~6V|
+|Rated Voltage | 4.8V|
+|Rated Current | 70mA|
+|Blocked Rotor Current | 900mA|
+|Slipping Current | 700mA|
+---
 
 **Drive and Power Train**
 <br>
