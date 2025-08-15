@@ -94,7 +94,15 @@ We believe in:
 ---
 
 ## Robot Design
+ For the past 2 years, we have been competing in this WRO mission and went on international round twice (WRO 2023 Panama and WRO 2024 Turkey).
+ So our robot design will be the improvement of our previous generation robots. 
+ 
+ #Design software
 
+ (blender no fusion yes picture)
+
+ Lets start with the designing tools. Eventhough using blender is very easy and stragiht forward, this year we decided to use a professional
+ designing tool for the first time which is the "Autodesk Fusion 360". Due to our improvement of the other electronics parts, mechanic hard ware needs to be more precises. The  Fusion 360 provide us with precision down to milimeter.
 
 
 
