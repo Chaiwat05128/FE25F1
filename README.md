@@ -108,6 +108,7 @@ designing tool for the first time which is the "Autodesk Fusion 360". Due to our
 
 <img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/674a9b35-0594-456e-b30d-0957e6978937" />
 
+
 This Future Engineering mission, teams need to build a self-driving car and the steering mechanic determind its direction.
 In our previous generation robot, we use the "Parallel steering" mechanism in which the wheels angle is equal on both side. With this
 mechanism, we encounter alot of sliping at both front and back of the car which made it drift and lose its balance. So after our research,
@@ -116,7 +117,8 @@ In short, the "Akerman steering" mechanism is out best choice and will definitel
 
 But how do we actually steer the car? The answer is servo motor, specificly the "Geek servo 360". It is a very compact yet powerful servo motor with a large turning radius of 360 degree and maximum torque of 1.6kg/cm. Turning speed of 60°/0.14s and only weight 20g. This servo include a Lego cmpadible connection point which make it very simple to attach to the main frame of the robot.  
 
-(geek servo picture)
+![image](https://github.com/user-attachments/assets/8ade7472-5f16-47c6-a7fc-12747075628e)
+
 
 Operating Voltage: 3.3V~6V
 Rated Voltage: 4.8V
