@@ -114,5 +114,15 @@ mechanism, we encounter alot of sliping at both front and back of the car which 
 we decided to use the "Akerman steering" mechanism. But there are two type of this particular mechanism; "Akerman",which is use globally in any manufactured cars and "Anti-Akerman", which is commonly use in formula series racing cars. "Akerman steering" is when a car is turning, the steering angle is different on both wheel with a tigher angle on the inside and a wider angle on the other side because while turnng the inside wheel turn at a smaller radius while the outside wheel is turning at a larger radius. This eliminate the scrubing(sliding) of the tires and made the turn more smooth. The "Anti-Akerman" on the other hand is the opposite with the outside wheel turnig at a thigher angle generate more grip which is need in a formula car, but it is more difficult to control (the down force generate by formula cars compensate these flaws).
 In short, the "Akerman steering" mechanism is out best choice and will definitely improve out robot.
 
+But how do we actually steer the car? The answer is servo motor, specificly the "Geek servo 360". It is a very compact yet powerful servo motor with a large turning radius of 360 degree and maximum torque of 1.6kg/cm. Turning speed of 60°/0.14s and only weight 20g. This servo include a Lego cmpadible connection point which make it very simple to attach to the main frame of the robot.  
 
+(geek servo picture)
+
+Operating Voltage: 3.3V~6V
+Rated Voltage: 4.8V
+Rated Current: 70mA
+Blocked Rotor Current: 900mA
+Slipping Current: 700mA
+
+**Drive and Power Train**
 
