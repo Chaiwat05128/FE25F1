@@ -106,7 +106,7 @@ designing tool for the first time which is the "Autodesk Fusion 360". Due to our
 
 **Steering Mechanic**
 
-(akerman and parlell diagram)
+<img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/674a9b35-0594-456e-b30d-0957e6978937" />
 
 This Future Engineering mission, teams need to build a self-driving car and the steering mechanic determind its direction.
 In our previous generation robot, we use the "Parallel steering" mechanism in which the wheels angle is equal on both side. With this
