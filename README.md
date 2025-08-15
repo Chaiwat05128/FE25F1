@@ -13,13 +13,13 @@
 
 ---
 ## Table of Contents
-- [About Team👥](#about-team)
-- [Project Overview🧠](#project-overview)
+- [About Team 👥](#about-team-)
+- [Project Overview 🧠](#project-overview-)
 - [Timeline 🗓️](#timeline-)
 - [Robot Design](#robot-design)
 
 
-###  About Team👥
+###  About Team 👥
 
 Picture
 
@@ -68,7 +68,7 @@ in another and grow as future engineers. No matter the challenge, we stay focuse
 ---
 
 
-## Project Overview🧠
+## Project Overview 🧠
 
 Our goal is clear: **Design, build, and innovate our own self-driving robot.**
 
@@ -81,7 +81,6 @@ We believe in:
 
 ---
 
-
 ## Timeline 🗓️
 
 | Phase               | Month     | Goal                                           |
@@ -92,21 +91,51 @@ We believe in:
 | 🧪 Testing          | August    | Real-world simulation and debugging            |
 | 🏁 Final Submission | September | Polish and submit for WRO competition          |
 
-
 ---
 
 ## Robot Design
- For the past 2 years, we have been competing in this WRO mission and went on international round twice (WRO 2023 Panama and WRO 2024 Turkey).
- So our robot design will be the improvement of our previous generation robots. 
- 
- **Design software**
 
- (blender no fusion yes picture)
+For the past 2 years, we have been competing in the **WRO Future Engineer** and have advanced to the international round twice:  
+- 🌎 **WRO PANAMA 2023**  
+- 🌎 **WRO TÜRKİYE 2024**  
 
-Lets start with the designing tools. Eventhough using blender is very easy and stragiht forward, this year we decided to use a professional
-designing tool for the first time which is the "Autodesk Fusion 360". Due to our improvement of the other electronics parts, mechanic hard ware needs to be more precises. The  Fusion 360 provide us with precision down to milimeter.
+Our current robot design builds on the strengths of our previous generation robots, focusing on **precision, durability, and performance**.
 
-**Steering Mechanic**
+---
+
+### 🖥️ Design Software
+
+This year, we started with 5 different design tools.  
+Although **Blender** is very easy and straightforward to use, we decided to switch to a professional tool for the first time — **Autodesk Fusion 360**.  
+With improvements in our electronic components, our mechanical hardware needed to be more precise.  
+Fusion 360 provides **millimeter-level precision**, which is essential for our designs.
+
+---
+
+### ⚙️ Design Hardware
+
+#### Bambu Lab X1C 3D Printer
+
+<p align="center">
+  <img width="500" height="500" alt="Design Hardware" src="https://github.com/user-attachments/assets/fc799c5c-7fab-481d-bad7-ec25c413d730" />
+</p>
+
+We chose the Bambu Lab X1C 3D Printer because it is widely recognized and popular among students and beginners due to its ease of use. Unlike many professional 3D printers, it is not complex, making it ideal for learning and rapid prototyping. Despite its simplicity, the print quality is professional-grade, delivering highly detailed and precise results. Additionally, the printer is affordable relative to the performance it provides, offering excellent value for money compared to other printers on the market. This combination of usability, quality, and cost-effectiveness makes it a perfect choice for both educational and practical applications.
+
+**🖨️ Product Features of Bambu Lab X1C**
+
+- 🎨 **Multi-Color & Multi-Material Capability** – Print with different colors and materials in a single job.  
+- ✅ **Proven Reliability** – Trusted by professionals worldwide.  
+- 📏 **High-Quality Printing** – Achieves 7 μm Lidar resolution for exceptional detail.  
+- ⚡ **High-Speed CoreXY** – Up to 20,000 mm/s² acceleration for rapid prints.  
+- 🛠️ **Dual Auto Bed Leveling** – Ensures perfect first layers every time.  
+- 🔄 **AMS 2 Pro Compatibility** – Works seamlessly with X1/P1 series printers for multi-material printing.
+
+link:https://asia.store.bambulab.com/products/x1-carbon?from=navigation
+
+---
+
+### Steering Mechanic Part
 <p align="center">
 <img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/674a9b35-0594-456e-b30d-0957e6978937" />
 
@@ -119,9 +148,10 @@ In short, the "Akerman steering" mechanism is out best choice and will definitel
 
 But how do we actually steer the car? The answer is servo motor, specificly the "Geek servo 360". It is a very compact yet powerful servo motor with a large turning radius of 360 degree and maximum torque of 1.6kg/cm. Turning speed of 60°/0.14s and only weight 20g. This servo include a Lego cmpadible connection point which make it very simple to attach to the main frame of the robot.  
 
-<p align="center">
-<img alt "image" src="https://github.com/user-attachments/assets/f55ca626-15f2-439b-b3c0-39458cbd5383"/>
+#### Geek servo 360
 
+<p align="center">
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f55ca626-15f2-439b-b3c0-39458cbd5383"/>
 
   
 |Power Usage     |       |
