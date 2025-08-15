@@ -125,7 +125,7 @@ But how do we actually steer the car? The answer is servo motor, specificly the 
 |Rated Current | 70mA|
 |Blocked Rotor Current | 900mA|
 |Slipping Current | 700mA|
----
+
 
 **Drive and Power Train**
 <br>
