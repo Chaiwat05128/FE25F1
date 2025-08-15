@@ -118,14 +118,15 @@ In short, the "Akerman steering" mechanism is out best choice and will definitel
 But how do we actually steer the car? The answer is servo motor, specificly the "Geek servo 360". It is a very compact yet powerful servo motor with a large turning radius of 360 degree and maximum torque of 1.6kg/cm. Turning speed of 60°/0.14s and only weight 20g. This servo include a Lego cmpadible connection point which make it very simple to attach to the main frame of the robot.  
 <p align="center">
 ![image](https://github.com/user-attachments/assets/8ade7472-5f16-47c6-a7fc-12747075628e)
-
+  
+---
 |------------------|---------|
 |Operating Voltage | 3.3V~6V|
 |Rated Voltage | 4.8V|
 |Rated Current | 70mA|
 |Blocked Rotor Current | 900mA|
 |Slipping Current | 700mA|
-
+---
 
 **Drive and Power Train**
 <br>
