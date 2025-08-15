@@ -97,7 +97,7 @@ We believe in:
  For the past 2 years, we have been competing in this WRO mission and went on international round twice (WRO 2023 Panama and WRO 2024 Turkey).
  So our robot design will be the improvement of our previous generation robots. 
  
- #Design software
+ **Design software**
 
  (blender no fusion yes picture)
 
