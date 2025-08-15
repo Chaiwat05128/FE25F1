@@ -101,9 +101,18 @@ We believe in:
 
  (blender no fusion yes picture)
 
- Lets start with the designing tools. Eventhough using blender is very easy and stragiht forward, this year we decided to use a professional
- designing tool for the first time which is the "Autodesk Fusion 360". Due to our improvement of the other electronics parts, mechanic hard ware needs to be more precises. The  Fusion 360 provide us with precision down to milimeter.
+Lets start with the designing tools. Eventhough using blender is very easy and stragiht forward, this year we decided to use a professional
+designing tool for the first time which is the "Autodesk Fusion 360". Due to our improvement of the other electronics parts, mechanic hard ware needs to be more precises. The  Fusion 360 provide us with precision down to milimeter.
 
+**Steering Mechanic**
+
+(akerman and parlell diagram)
+
+This Future Engineering mission, teams need to build a self-driving car and the steering mechanic determind its direction.
+In our previous generation robot, we use the "Parallel steering" mechanism in which the wheels angle is equal on both side. With this
+mechanism, we encounter alot of sliping at both front and back of the car which made it drift and lose its balance. So after our research,
+we decided to use the "Akerman steering" mechanism. But there are two type of this particular mechanism; "Akerman",which is use globally in any manufactured cars and "Anti-Akerman", which is commonly use in formula series racing cars. "Akerman steering" is when a car is turning, the steering angle is different on both wheel with a tigher angle on the inside and a wider angle on the other side because while turnng the inside wheel turn at a smaller radius while the outside wheel is turning at a larger radius. This eliminate the scrubing(sliding) of the tires and made the turn more smooth. The "Anti-Akerman" on the other hand is the opposite with the outside wheel turnig at a thigher angle generate more grip which is need in a formula car, but it is more difficult to control (the down force generate by formula cars compensate these flaws).
+In short, the "Akerman steering" mechanism is out best choice and will definitely improve out robot.
 
 
 
