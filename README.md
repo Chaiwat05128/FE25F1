@@ -19,7 +19,7 @@
 - [Robot Design](#robot-design)
 
 
-###  About Team 👥
+##  About Team 👥
 
 Picture
 
@@ -31,7 +31,7 @@ Our team is called **"F1"**, inspired by our shared enthusiasm for **Formula 1 r
 
 <br>
 
-### 🧑‍🤝‍🧑 Meet the Team
+## 🧑‍🤝‍🧑 Meet the Team
 
 | Name       | Role                           | Responsibility                                                                 |
 |------------|--------------------------------|--------------------------------------------------------------------------------|
@@ -43,7 +43,7 @@ Our team is called **"F1"**, inspired by our shared enthusiasm for **Formula 1 r
 
 <br>
 
-### 🤝 How We Work
+## 🤝 How We Work
 
 Even though we come from different age groups, we collaborate seamlessly. Each of us brings **unique strengths** to the team, and our clearly divided roles allow us to stay focused and productive.
 
@@ -54,7 +54,7 @@ We believe in:
 
 <br>
 
-### 💬 Our Mission
+## 💬 Our Mission
 
 > _"We’re not just building robots — we’re building a future."_  
 
@@ -114,7 +114,7 @@ Fusion 360 provides **millimeter-level precision**, which is essential for our d
 
 ### ⚙️ Design Hardware
 
-#### Bambu Lab X1C 3D Printer
+#### **Bambu Lab X1C 3D Printer**
 
 <p align="center">
   <img width="500" height="500" alt="Design Hardware" src="https://github.com/user-attachments/assets/fc799c5c-7fab-481d-bad7-ec25c413d730" />
@@ -130,8 +130,25 @@ We chose the Bambu Lab X1C 3D Printer because it is widely recognized and popula
 - ⚡ **High-Speed CoreXY** – Up to 20,000 mm/s² acceleration for rapid prints.  
 - 🛠️ **Dual Auto Bed Leveling** – Ensures perfect first layers every time.  
 - 🔄 **AMS 2 Pro Compatibility** – Works seamlessly with X1/P1 series printers for multi-material printing.
+  
+**X1C Tech Specs**
 
-link:https://asia.store.bambulab.com/products/x1-carbon?from=navigation
+| Feature | Specification |
+|---------|---------------|
+| **Build Volume (W×D×H)** | 256 × 256 × 256 mm³* |
+| **Nozzle** | 0.4 mm Hardened Steel Included |
+| **Hotend** | All-Metal |
+| **Max Hot End Temperature** | 300 °C |
+| **Filament Diameter** | 1.75 mm |
+| **Supported Filament** | PLA, PETG, TPU, ABS, ASA, PVA, PET <br> Ideal for PA, PC, Carbon/Glass Fiber Reinforced Polymer |
+| **Build Plate Surface** | Bambu Textured PEI Plate (Pre-installed, Random, Both compatible with Micro Lidar) |
+| **Max Build Plate Temperature** | 110 °C@220V, 120 °C@110V |
+| **Max Speed of Tool Head** | 500 mm/s |
+| **Max Acceleration of Tool Head** | 20 m/s² |
+| **Physical Dimensions** | **X1C:** 389 × 389 × 457 mm³ <br> Package size: 480 × 480 × 535 mm³ <br> Net weight: 14.13 kg, Gross weight: 18 kg <br> **X1C Combo:** Package size: 480 × 480 × 590 mm³ <br> Gross weight (AMS included): 22.3 kg |
+| **Electrical Requirements** | 100–240 VAC, 50/60 Hz, 1000W@220V, 350W@110V |
+
+🔗 [Learn more about the Bambu Lab X1C here](https://asia.store.bambulab.com/products/x1-carbon?from=navigation)  
 
 ---
 
@@ -146,9 +163,16 @@ mechanism, we encounter alot of sliping at both front and back of the car which 
 we decided to use the "Akerman steering" mechanism. But there are two type of this particular mechanism; "Akerman",which is use globally in any manufactured cars and "Anti-Akerman", which is commonly use in formula series racing cars. "Akerman steering" is when a car is turning, the steering angle is different on both wheel with a tigher angle on the inside and a wider angle on the other side because while turnng the inside wheel turn at a smaller radius while the outside wheel is turning at a larger radius. This eliminate the scrubing(sliding) of the tires and made the turn more smooth. The "Anti-Akerman" on the other hand is the opposite with the outside wheel turnig at a thigher angle generate more grip which is need in a formula car, but it is more difficult to control (the down force generate by formula cars compensate these flaws).
 In short, the "Akerman steering" mechanism is out best choice and will definitely improve out robot.
 
-But how do we actually steer the car? The answer is servo motor, specificly the "Geek servo 360". It is a very compact yet powerful servo motor with a large turning radius of 360 degree and maximum torque of 1.6kg/cm. Turning speed of 60°/0.14s and only weight 20g. This servo include a Lego cmpadible connection point which make it very simple to attach to the main frame of the robot.  
+ **How We Steer the Robot**  
 
-#### Geek servo 360
+We use the **Geek Servo 360**, a compact yet powerful servo motor with:  
+- **360° rotation**  
+- **Max torque**: 1.6 kg·cm  
+- **Turning speed**: 60° in 0.14s  
+- **Weight**: only 20g  
+- **LEGO-compatible mount**, making it easy to attach to the robot fram
+  
+#### **Geek servo 360**
 
 <p align="center">
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f55ca626-15f2-439b-b3c0-39458cbd5383"/>
@@ -162,9 +186,49 @@ But how do we actually steer the car? The answer is servo motor, specificly the 
 |Blocked Rotor Current | 900mA|
 |Slipping Current | 700mA|
 
-Link:https://th.aliexpress.com/item/1005005515178664.html?gatewayAdapt=glo2tha
+🔗 [View the Geek Servo 360 here](https://th.aliexpress.com/item/1005005515178664.html?gatewayAdapt=glo2tha)
 
 ---
 
-**Drive and Power Train**
+### 🚗 Drive and Power Train
+
+#### **LEGO 4pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)
+
+<p align="center">
+  <img width="400" height="400" alt="LEGO Wheel and Tire Set" src="https://m.media-amazon.com/images/I/91nfbj2b8TL._AC_SL1500_.jpg">
+</p>
+
+**Product Details:**
+- Brand New LEGO 8pc Technic Wheel and Tire Set  
+- Includes:
+  - (4) LEGO Gray Wheel 30.4mm D. × 20mm without pin holes, with reinforced rim (Part No. **56145**)  
+  - (4) LEGO Black Tyre 43.2 × 22 ZR (Part No. **44309**)  
+- Designed for building robotic or moving LEGO creations  
+- Compatible with LEGO Technic, EV3, Mindstorms, and Bionicle sets  
+- Comes in a sealed clear plastic bag (no LEGO box or instructions)  
+
+**Specifications Table:**
+
+| Specification               | Detail                             |
+|-----------------------------|-------------------------------------|
+| Manufacturer                | LEGO                                |
+| Brand                       | LEGO                                |
+| Item Weight                 | 2.08 oz (58.97 g)                   |
+| Item Model Number           | 11218                               |
+| Discontinued by Manufacturer| No                                  |
+| Manufacturer Part Number    | 56145c01                            |
+| Rim Diameter                | 0.79 in (2 cm)                      |
+| Date First Available        | June 30, 2016                       |
+| Size                        | 8 pc                                |
+| Wheel Size                  | 22 mm                               |
+| Rim Size                    | 0.79 in (2 cm)                      |
+| UPC                         | 720066670138                        |
+| Package Weight              | 1 lb                                |
+
+🔗 [View Lego 8pc Wheel and Tire Set](https://www.ubuy.co.th/en/product/Q40EIR0-technic-lego-8pc-wheel-and-tire-set-mindstorms-nxt-ev3-tyre-56145-44309?srsltid=AfmBOoqQe48ysbVRMcoWXN62X-CG0Oi-pXFZZlO2FROchFxFxxGcyjwI)
+
+---
+
+
+
 <br>
