@@ -119,8 +119,8 @@ But how do we actually steer the car? The answer is servo motor, specificly the 
 
 <p align="center">
   
-|Specification|
-|---------------------|
+|Specification|       |
+|------------|---------|
 |Operating Voltage | 3.3V~|
 |Rated Voltage | 4.8V|
 |Rated Current | 70mA|
