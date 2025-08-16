@@ -251,7 +251,7 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 
 ---
 #### **LEGO Technic Differential gear** 
- <img width="500" height="500" alt="LEGO Differential gear" src="https://github.com/user-attachments/assets/38aea1b2-3efb-408e-b1d6-5a0acd1d711c](https://github.com/user-attachments/assets/f2fdd65b-ffc8-48e2-9480-3315d0e4df30"/>
+ <img width="500" height="500" alt="LEGO Differential gear" src="https://i.ebayimg.com/images/g/eFEAAOSwqidiC8im/s-l1200.jpg"/>
 
 ---
 
