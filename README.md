@@ -255,7 +255,7 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 #### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
 
 <p align="center">
-  <img width="400" height="400" alt="LEGO Wheel and Tire Set" src="https://m.media-amazon.com/images/I/91nfbj2b8TL._AC_SL1500_.jpg"/>
+  <img width="500" height="500" alt="LEGO Wheel and Tire Set" src="https://github.com/user-attachments/assets/38aea1b2-3efb-408e-b1d6-5a0acd1d711c"/>
 
 We use only two wheel in the front side
 **Product Details:**
@@ -292,5 +292,92 @@ We use only two wheel in the front side
 #### Lego Black Tire 49.5x20 (x4) and Light Bluish Gray Wheel 30.4mm x 20mm (x4)
 
 <p align="center">
-  <img width="400" height="400" alt="LEGO Wheel and Tire Set 2" src="https://m.media-amazon.com/images/I/71DXwRrTupL._AC_SL1500_.jpg"
+  <img width="600" height="600" alt="LEGO Wheel and Tire Set 2" src="https://github.com/user-attachments/assets/74e26ee1-495c-45ab-b951-dc281750b150"/>
 
+We use this two wheel in back side:</p>
+**About this item**
+- 100% Authentic Brand New Lego Parts
+- 4x Lego 49.5mm X 20mm Rubber Tires
+- 4x 30.4mm x 20mm Lego Wheels
+
+**Technical Details**
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Attribute</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>Educational Objective(s)</td>
+    <td>Team Building Skills</td>
+  </tr>
+  <tr>
+    <td>Model Number</td>
+    <td>43234-735</td>
+  </tr>
+  <tr>
+    <td>Number of Game Players</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Assembly Required</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Batteries Required?</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Batteries Included?</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Material Type(s)</td>
+    <td>Rubber</td>
+  </tr>
+  <tr>
+    <td>Colour</td>
+    <td>Black, Gray</td>
+  </tr>
+  <tr>
+    <td>Manufacturer Recommended Age</td>
+    <td>4 years and up</td>
+  </tr>
+  <tr>
+    <td>Item Model Number</td>
+    <td>43234-735</td>
+  </tr>
+  <tr>
+    <td>Package Dimensions</td>
+    <td>19 x 12.6 x 4.8 cm; 68.04 g</td>
+  </tr>
+  <tr>
+    <td>ASIN</td>
+    <td>B071HFK34H</td>
+  </tr>
+</table>
+
+---
+### Energy management and inspection
+#### Gravity: URM09 Ultrasonic Distance Sensor 
+<p align="center">
+  <img width="400" height="400" alt="LEGO Wheel and Tire Set 2" src="https://github.com/Frances9/SEN0307/blob/master/DFR0307_WIKI_Cover.jpg?raw=true"/>
+
+This is an ultrasonic sensor with an open dual-probe, employing standard interface of Gravity PH2.0-3P vertical patch socket. The module is compatible with controllers with 3.3V or 5V logical level, such as Arduino and Raspberry Pi.
+
+The sensor comes with built-in temperature compensation, which can greatly reduce measurement error caused by over high/low temperature. It adopts analog voltage output, and provides accurate distance measurement within 2-500cm with 1cm resolution and ±1% accuracy. The design of dual probe effectively decreases the dead zone. Users can check the measurement process conveniently by the onboard indicator.
+
+This small ranging module can be used in an extensive range of applications, for instance, robots with obstacle avoidance function, backing car annunciator, doorbell etc.
+
+**Specification**
+- Power Supply: 3.3~5.5V DC
+- Operating Current: 20mA
+- Operating Temperature: -10℃～＋70℃
+- Measurement Range: 2cm～500cm
+- Resolution: 1cm
+- Accuracy: 1%
+- Acoustic Frequency: 38~42KHz
+- Frequency: 30Hz Max
+- Dimension: 47mm × 22 mm/1.85×0.87”
+- Distance Formula: Distance=Vout(mV)×520/Vin(mV)
+
+---
