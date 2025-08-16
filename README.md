@@ -96,8 +96,8 @@ We believe in:
 ## Robot Design
 
 For the past 2 years, we have been competing in the **WRO Future Engineer** and have advanced to the international round twice:  
-- 🌎 **WRO PANAMA 2023**  
-- 🌎 **WRO TÜRKİYE 2024**  
+-  **WRO PANAMA 2023**  
+-  **WRO TÜRKİYE 2024**  
 
 Our current robot design builds on the strengths of our previous generation robots, focusing on **precision, durability, and performance**.
 
@@ -175,7 +175,7 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 #### **Geek servo 360**
 
 <p align="center">
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f55ca626-15f2-439b-b3c0-39458cbd5383"/>
+<img width="300" height="300" alt="Greek servo" src="https://github.com/user-attachments/assets/f55ca626-15f2-439b-b3c0-39458cbd5383"/>
 
   
 |Power Usage     |       |
@@ -192,11 +192,68 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 
 ### 🚗 Drive and Power Train
 
-#### **LEGO 4pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)
+#### **Chihai Motor 25-370K**
 
 <p align="center">
-  <img width="400" height="400" alt="LEGO Wheel and Tire Set" src="https://m.media-amazon.com/images/I/91nfbj2b8TL._AC_SL1500_.jpg">
+  <img width="400" height="400" alt="Motor12V 980RPM" src="https://static.cytron.io/image/cache/catalog/products/SPG20HP-20K/spg20hp-20k-a-800x800.jpg"/>
+  
+SPG20HP-20K is also well-known as GM25 motor, a small-size geared motor coupled with a 20:1 gearbox that is able to produce 225mN.m torque with 980 RPM (no load). It is a DC geared motor, ideal for building small-sized mobile robots for sumo, small automation models, and of course other applications too. With the standard size and variety of gear ratios, users can always change the motor without changing the existing robot design.
+
+The rated voltage is 12V. Lower voltage might not have enough torque to drive the wheel or mechanism; higher voltage will provide higher torque and higher speed, but it will shorten the life of the motor. You may need the 10A Sumo Robot Controller to control this motor
+
+**Specification**
+- High Power
+- Rated Voltage: 12VDC
+- Rated Current: 2.7A
+- Stall Current: < 16A
+- Rated Speed: 780 RPM
+- No Load Speed: 980 RPM
+- Rated Load Torque: 225mN.m (2.3kgf.cm)
+- Gear Ratio: 20:1
+
+**⚙️ Motor Specifications**
+
+**Model:** CHR-GM25-BK370  
+**Type:** Permanent Magnet DC Gear Motor  
+**Voltage:** DC 6.0V / 12.0V  
+**Max Power:** 8W (6V), 26W (12V)  
+**Input Motor Speed:** 10,000 RPM (6V), 20,000 RPM (12V)  
+**Max Torque:** 8.0 kg·cm (0.8 N·m)  
+**Note:** Requires a **10A or higher power supply** due to high power/current.
+
+**🔹 DC 12.0V (Max Power 26W, Input Speed 20,000 RPM)**
+
+| Ratio | No-load Current (mA) | No-load Speed (rpm) | Rated Torque (kg·cm) | Rated Torque (N·m) | Rated Speed (rpm) | Rated Current (A) | Stall Current (A) |
+|-------|-----------------------|---------------------|-----------------------|---------------------|-------------------|-------------------|-------------------|
+| 1:4.4 | ≤600                  | 4500                | 0.5                   | 0.05                | 3500              | ≤2.7              | ≤16.0             |
+| 1:10  | ≤600                  | 2000                | 1.1                   | 0.10                | 1580              | ≤2.7              | ≤16.0             |
+| 1:20  | ≤600                  | 980                 | 2.3                   | 0.21                | 780               | ≤2.7              | ≤16.0             |
+| 1:34  | ≤600                  | 580                 | 3.5                   | 0.34                | 460               | ≤2.7              | ≤16.0             |
+| 1:45  | ≤600                  | 440                 | 4.5                   | 0.44                | 350               | ≤2.7              | ≤16.0             |
+| 1:57  | ≤600                  | 440                 | 6.0                   | 0.59                | 275               | ≤2.7              | ≤16.0             |
+| 1:75  | ≤600                  | 350                 | 7.0                   | 0.69                | 210               | ≤2.7              | ≤16.0             |
+| 1:100 | ≤600                  | 260                 | max 8.0               | max 0.80            | 160               | ≤2.7              | ≤16.0             |
+| 1:125 | ≤600                  | 160                 | max 8.0               | max 0.80            | 130               | ≤2.7              | ≤16.0             |
+| 1:217 | ≤600                  | 90                  | max 8.0               | max 0.80            | 75                | ≤2.7              | ≤16.0             |
+| 1:478 | ≤600                  | 40                  | max 8.0               | max 0.80            | 37                | ≤2.7              | ≤16.0             |
+
+<p><b>✔️ We use 1:20 (gearbox length 19mm)</b></p>
+
+**Size**
+<p align="center">
+  <img width="500" height="500" alt="Size" src="https://github.com/user-attachments/assets/d37882c9-4c86-4488-aa28-6ef01caa23b3" />
 </p>
+<p align="center">
+  <img width="349" height="679" alt="image" src="https://github.com/user-attachments/assets/35444937-4745-49aa-8487-f3bdd38afcb0" />
+
+
+    
+---
+
+#### **LEGO 4pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
+
+<p align="center">
+  <img width="400" height="400" alt="LEGO Wheel and Tire Set" src="https://m.media-amazon.com/images/I/91nfbj2b8TL._AC_SL1500_.jpg"/>
 
 **Product Details:**
 - Brand New LEGO 8pc Technic Wheel and Tire Set  
@@ -228,7 +285,3 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 🔗 [View Lego 8pc Wheel and Tire Set](https://www.ubuy.co.th/en/product/Q40EIR0-technic-lego-8pc-wheel-and-tire-set-mindstorms-nxt-ev3-tyre-56145-44309?srsltid=AfmBOoqQe48ysbVRMcoWXN62X-CG0Oi-pXFZZlO2FROchFxFxxGcyjwI)
 
 ---
-
-
-
-<br>
