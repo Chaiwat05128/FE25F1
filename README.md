@@ -289,4 +289,8 @@ We use only two wheel in the front side
 
 ---
 
+#### Lego Black Tire 49.5x20 (x4) and Light Bluish Gray Wheel 30.4mm x 20mm (x4)
+
+<p align="center">
+  <img width="400" height="400" alt="LEGO Wheel and Tire Set 2" src="https://m.media-amazon.com/images/I/71DXwRrTupL._AC_SL1500_.jpg"
 
