@@ -249,7 +249,10 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 
 🔗 [View Chihai Motor 25-370K Low Noise DC 6V / 12V / 24V Wall Climbing Car Motor WPL B-14 for Remote Control Car, DIY Smart Robot](https://www.alibaba.com/product-detail/Chihai-Motor-25-370K-Low-Noise_62197406831.html?spm=a2700.shop_plser.41413.18.65c52728k1NrzC)
 
-  
+---
+#### **LEGO Technic Differential gear** 
+ <img width="500" height="500" alt="LEGO Differential gear" src="https://github.com/user-attachments/assets/38aea1b2-3efb-408e-b1d6-5a0acd1d711c](https://github.com/user-attachments/assets/f2fdd65b-ffc8-48e2-9480-3315d0e4df30"/>
+
 ---
 
 #### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
