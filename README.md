@@ -239,27 +239,30 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 
 <p><b>✔️ We use 1:20 (gearbox length 19mm)</b></p>
 
-**Size**
+**Size and Details**
 <p align="center">
   <img width="500" height="500" alt="Size" src="https://github.com/user-attachments/assets/d37882c9-4c86-4488-aa28-6ef01caa23b3" />
 </p>
 <p align="center">
-  <img width="349" height="679" alt="image" src="https://github.com/user-attachments/assets/35444937-4745-49aa-8487-f3bdd38afcb0" />
+  <img width="349" height="679" alt="Chihai Motor Size" src="https://github.com/user-attachments/assets/35444937-4745-49aa-8487-f3bdd38afcb0" />
+</p>
 
+🔗 [View Chihai Motor 25-370K Low Noise DC 6V / 12V / 24V Wall Climbing Car Motor WPL B-14 for Remote Control Car, DIY Smart Robot](https://www.alibaba.com/product-detail/Chihai-Motor-25-370K-Low-Noise_62197406831.html?spm=a2700.shop_plser.41413.18.65c52728k1NrzC)
 
-    
+  
 ---
 
-#### **LEGO 4pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
+#### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
 
 <p align="center">
   <img width="400" height="400" alt="LEGO Wheel and Tire Set" src="https://m.media-amazon.com/images/I/91nfbj2b8TL._AC_SL1500_.jpg"/>
 
+We use only two wheel in the front side
 **Product Details:**
 - Brand New LEGO 8pc Technic Wheel and Tire Set  
 - Includes:
-  - (4) LEGO Gray Wheel 30.4mm D. × 20mm without pin holes, with reinforced rim (Part No. **56145**)  
-  - (4) LEGO Black Tyre 43.2 × 22 ZR (Part No. **44309**)  
+  - (8) LEGO Gray Wheel 30.4mm D. × 20mm without pin holes, with reinforced rim (Part No. **56145**)  
+  - (8) LEGO Black Tyre 43.2 × 22 ZR (Part No. **44309**)  
 - Designed for building robotic or moving LEGO creations  
 - Compatible with LEGO Technic, EV3, Mindstorms, and Bionicle sets  
 - Comes in a sealed clear plastic bag (no LEGO box or instructions)  
@@ -285,3 +288,5 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 🔗 [View Lego 8pc Wheel and Tire Set](https://www.ubuy.co.th/en/product/Q40EIR0-technic-lego-8pc-wheel-and-tire-set-mindstorms-nxt-ev3-tyre-56145-44309?srsltid=AfmBOoqQe48ysbVRMcoWXN62X-CG0Oi-pXFZZlO2FROchFxFxxGcyjwI)
 
 ---
+
+
