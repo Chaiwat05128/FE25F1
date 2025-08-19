@@ -260,6 +260,11 @@ You might wonder, “Why LEGO?” The reason is that our school has limited faci
 
 Using LEGO parts not only ensures that the differential gear works reliably, but also allows us to easily obtain multiple identical spare parts when needed.
 
+The System includes multiple parts:
+   -Technic, Gear Differential Housing : 65414
+   -Technic, Gear 12 Tooth Bevel : 6589
+   -Technic, Gear 28 Tooth Double Bevel with Pin Hole : 65413
+   
 ---
 
 #### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
