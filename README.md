@@ -254,6 +254,12 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 <p align="center">
  <img width="400" height="400" alt="LEGO Differential gear" src="https://i.ebayimg.com/images/g/eFEAAOSwqidiC8im/s-l1200.jpg"/>
 
+A differential gear (commonly called a differential) is a special gear system used in vehicles to allow the drive wheels to rotate at different speeds while still being powered by the same engine or motor. When combined with the Ackermann steering mechanism, it enables smoother and more efficient movement for our robot.
+
+You might wonder, “Why LEGO?” The reason is that our school has limited facilities, which prevents us from manufacturing our own components. As a result, we rely on pre-manufactured LEGO parts. According to the regulations, teams are not allowed to use a pre-built chassis, but standard parts are permitted.
+
+Using LEGO parts not only ensures that the differential gear works reliably, but also allows us to easily obtain multiple identical spare parts when needed.
+
 ---
 
 #### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
