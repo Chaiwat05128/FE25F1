@@ -396,3 +396,9 @@ This small ranging module can be used in an extensive range of applications, for
 - Distance Formula: Distance=Vout(mV)×520/Vin(mV)
 
 ---
+
+### Light Sensor ZX-03
+
+we use red sensor to detected blue line
+
+---
