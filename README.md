@@ -5,13 +5,13 @@
 <br>
 <br>
 <p align="center">
-  <img width="400" src="https://github.com/user-attachments/assets/dcaa8bc4-9314-4e37-97fa-51abc5f054b7"/>
-  <img  width="450" src= "https://github.com/user-attachments/assets/1291b326-65d5-40d3-8a7d-3f70c56097e7"/> 
+  <img width="360" alt="Team F1 logo" src="https://github.com/user-attachments/assets/dcaa8bc4-9314-4e37-97fa-51abc5f054b7"/>
+  <img  width="420" alt="Robot preview" src= "https://github.com/user-attachments/assets/1291b326-65d5-40d3-8a7d-3f70c56097e7"/> 
 </p>
-</p>
-<br>
+
 
 ---
+
 ## Table of Contents
 - [About Team 👥](#about-team-)
 - [Project Overview 🧠](#project-overview-)
@@ -400,5 +400,4 @@ This small ranging module can be used in an extensive range of applications, for
 ### Light Sensor ZX-03
 
 we use red sensor to detected blue line
-
 ---
