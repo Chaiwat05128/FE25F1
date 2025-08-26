@@ -399,5 +399,11 @@ This small ranging module can be used in an extensive range of applications, for
 
 ### Light Sensor ZX-03
 
-we use red sensor to detected blue line
+we use red sensor to detected blue lin
+---
+
+### DfRobot Gravity: 10 DOF IMU AHRS BNO055 + BMP280
+
+we use it to keep the robot direction stragith and allows turn and connering to be more precise.
+
 ---
