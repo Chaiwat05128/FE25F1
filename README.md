@@ -407,3 +407,4 @@ we use red sensor to detected blue lin
 we use it to keep the robot direction stragith and allows turn and connering to be more precise.
 
 ---
+
