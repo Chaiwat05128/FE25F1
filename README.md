@@ -401,6 +401,7 @@ This small ranging module can be used in an extensive range of applications, for
 
 we use red sensor to detected blue lin
 ---
+---
 
 ### DfRobot Gravity: 10 DOF IMU AHRS BNO055 + BMP280
 
