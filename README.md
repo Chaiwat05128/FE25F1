@@ -397,15 +397,80 @@ This small ranging module can be used in an extensive range of applications, for
 
 ---
 
-### Light Sensor ZX-03
+#### ZX-03 Reflective Infrared Sensor Module
+<p align="center">
+  <img width="475" height="475" alt="BLUE Light Sensor" src="https://github.com/user-attachments/assets/d24a4812-1aa1-4804-b3f3-0850d43454d7" />
+  <img width="400" height="400" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/ede64ba2-939b-4fe5-bf36-bd700def520f" />
 
-we use red sensor to detected blue lin
-jrjrkr
----
+We use a red sensor to detect the blue line, and a blue sensor to detect the red line. The reason is that optical sensors detect objects more effectively when the emitted light wavelength is different from the color of the target surface. The contrast between the sensor light and the line color increases the reflection difference, resulting in higher accuracy and more reliable detection.
 
-### DfRobot Gravity: 10 DOF IMU AHRS BNO055 + BMP280
+**Description**
+This module contains a TCRT5000, which integrates an infrared LED and a phototransistor in a single package. When power is supplied, the LED emits infrared light in a wide beam. If an object is placed in front of the sensor, the phototransistor receives the reflected infrared light and allows current to flow. This generates a voltage drop at the S (Vout) pin. The output voltage level depends on the intensity of the reflected infrared light received by the phototransistor — stronger reflections result in higher output voltage, while weaker reflections produce lower voltage.
 
-we use it to keep the robot direction stragith and allows turn and connering to be more precise.
+The TCRT5000 Infrared Reflectance Obstacle Avoidance Line Tracking Sensor is an optical sensor that utilizes infrared (IR) light technology to detect objects and reflective surfaces. It works by emitting infrared light through an IR LED, and then measuring the amount of light reflected back to its built-in phototransistor.
 
----
+Because of this simple yet effective principle, the TCRT5000 is widely used in robotics and automation projects. One of its most common applications is in line-following robots, where the sensor can distinguish between dark lines and light backgrounds by measuring differences in IR reflectivity. Additionally, it can serve as a short-range proximity sensor, making it suitable for obstacle detection, object counting, and motion tracking systems.
+
+This sensor is popular among students, hobbyists, and engineers alike due to its low cost, compact design, and reliable performance. Its versatility and ease of integration make it an excellent choice for educational projects, competitions, and prototype development.
+
+**TCRT5000 Infrared Reflectance Sensor**  
+A compact, budget-friendly sensor that uses an IR LED and phototransistor to detect reflected infrared light.  
+Perfect for **line-following robots, edge detection, proximity sensing, and Arduino DIY projects**.  
+
+** Features**
+- **Advanced IR Technology** – Detects IR reflections, like a third eye for your robot.  
+- **Arduino Friendly** – Works with 3.3–5V, plug-and-play with Arduino boards.  
+- **Versatile Applications** – Line tracking, edge detection, proximity sensing, object counting.  
+- **Compact & Affordable** – Ideal for classrooms, competitions, and prototypes.  
+
+**Working Principle**
+- The IR LED emits light.  
+- Objects in front reflect IR back to the phototransistor.  
+- **Strong reflection → higher Vout**  
+- **Weak reflection → lower Vout**  
+
+**🛠 Arduino Wiring**
+| Sensor Pin | Arduino Pin |
+|------------|-------------|
+| VCC        | 5V (or 3.3V) |
+| GND        | GND |
+| S (Vout)   | A0 |
+
+**How to connect and use the Arduino TCRT5000 R3 tracking sensor**
+<img width="1900" height="1060" alt="Wiring diagram (19)" src="https://github.com/user-attachments/assets/76a6c024-2820-456c-9532-8ba95bd674d9" />
+
+**An example Arduino code in English for using the TCRT5000 on an Arduino UNO to detect black and white lines**
+
+```cpp
+//Example By ArduinoAll
+int ledPin = 13;
+int sensor = A0;
+int val = 0;
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+  //Serial.println("ArduinoAll TEST");
+}
+void loop() {
+  val = analogRead(sensor);  //อ่านค่าจากเซนเซอร์
+  Serial.println(val); // แสดงค่าเซนเซอร์ออกทางหน้าจอ
+  if (val > 500) { // ค่า 500 สามารถกำหนดปรับได้ตามค่าแสงในห้องต่างๆ
+    digitalWrite(ledPin, HIGH); // ไฟ LED ติด
+  } else {
+    digitalWrite(ledPin, LOW); // ไฟ LED ดับ
+  }
+  delay(100);
+}
+```
+
+**Open the Serial Monitor to view the values detected by the TCRT5000 line-tracking sensor on the Arduino.**
+<img width="1920" height="1080" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (20)" src="https://github.com/user-attachments/assets/25680ed3-7c46-4c48-a16c-2367ba3ae659" />
+
+Or, to get a clearer view, open the Serial Plotter
+</p>
+<img width="448" height="493" alt="image" src="https://github.com/user-attachments/assets/e3a28e8d-9dcf-48e3-ba8d-f94e389bda5e" />
+<img width="911" height="640" alt="image" src="https://github.com/user-attachments/assets/47ba43fc-a86f-439e-8373-483fce86536f" />
+
+
+
 
