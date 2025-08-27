@@ -117,8 +117,7 @@ Fusion 360 provides **millimeter-level precision**, which is essential for our d
 #### **Bambu Lab X1C 3D Printer**
 
 <p align="center">
-  <img width="500" height="500" alt="Design Hardware" src="https://github.com/user-attachments/assets/fc799c5c-7fab-481d-bad7-ec25c413d730" />
-</p>
+   <img width="600" height="600" alt="3D Printer" src="https://github.com/user-attachments/assets/058b0f5a-80d6-4d0f-a3c5-22a8b9f47e86" />
 
 We chose the Bambu Lab X1C 3D Printer because it is widely recognized and popular among students and beginners due to its ease of use. Unlike many professional 3D printers, it is not complex, making it ideal for learning and rapid prototyping. Despite its simplicity, the print quality is professional-grade, delivering highly detailed and precise results. Additionally, the printer is affordable relative to the performance it provides, offering excellent value for money compared to other printers on the market. This combination of usability, quality, and cost-effectiveness makes it a perfect choice for both educational and practical applications.
 
@@ -172,12 +171,30 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 - **Weight**: only 20g  
 - **LEGO-compatible mount**, making it easy to attach to the robot fram
   
-#### **Geek servo 360**
+#### **⚙️ Geek Servo 360**
 
 <p align="center">
-<img width="300" height="300" alt="Greek servo" src="https://github.com/user-attachments/assets/f55ca626-15f2-439b-b3c0-39458cbd5383"/>
+<img width="600" height="600" alt="Greek servo" src="https://github.com/user-attachments/assets/49665430-7fd6-42ca-9f63-365dcc6b2665" /> 
 
-  
+The **Geek Servo 360** is the core of our **steering system**. When designing our robot, we needed a servo that could combine **LEGO compatibility, compact size, and reliable torque**. After testing multiple options, we selected the Geek Servo 360 because it gives us the **perfect balance between speed, strength, and precision**.  
+
+- 🏎️ **Designed for LEGO systems** → snaps directly into our chassis without complex mounts  
+- ⚡ **Fast response (0.14s/60°)** → quick steering corrections, ideal for sharp curves on the WRO track  
+- 💪 **High torque (1.6 kg·cm @ 6V)** → strong enough to turn wheels even under load  
+- 🔄 **360° continuous rotation** → allows us to experiment with advanced control algorithms (like PID steering)  
+- 🪶 **Lightweight (20g)** → keeps overall robot weight low for better acceleration  
+
+Unlike regular LEGO servos, the Geek Servo 360 offers **higher precision and control flexibility**. This makes it especially useful for **Ackermann steering**, where smooth wheel angles are essential to reduce slipping and drifting.  
+
+> **In short:** the Geek Servo 360 is the perfect match for our steering system — **LEGO-friendly, powerful, fast, and precise.**
+
+Why We Use It:
+- Compact (20g) → keeps robot light and agile
+- LEGO-compatible mount → fits easily into our frame
+- Strong torque (1.6 kg·cm) → reliable steering
+- Fast response (0.14s per 60°) → smooth turning at speed
+- 360° rotation → flexible control beyond standard 180° servos
+
 |Power Usage     |       |
 |------------|---------|
 |Operating Voltage | 3.3V~|
@@ -195,7 +212,8 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 #### **Chihai Motor 25-370K**
 
 <p align="center">
-  <img width="400" height="400" alt="Motor12V 980RPM" src="https://static.cytron.io/image/cache/catalog/products/SPG20HP-20K/spg20hp-20k-a-800x800.jpg"/>
+  <img width="600" height="600" alt="Motor12V 980RPM" src="https://github.com/user-attachments/assets/9bd6fa35-99c0-4764-aa84-4913e5cc0cb3" />
+
   
 SPG20HP-20K is also well-known as GM25 motor, a small-size geared motor coupled with a 20:1 gearbox that is able to produce 225mN.m torque with 980 RPM (no load). It is a DC geared motor, ideal for building small-sized mobile robots for sumo, small automation models, and of course other applications too. With the standard size and variety of gear ratios, users can always change the motor without changing the existing robot design.
 
@@ -252,7 +270,8 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 ---
 #### **LEGO Technic Differential gear** 
 <p align="center">
- <img width="400" height="400" alt="LEGO Differential gear" src="https://i.ebayimg.com/images/g/eFEAAOSwqidiC8im/s-l1200.jpg"/>
+ <img width="550" height="550" alt="LEGO Differential gear" src="https://github.com/user-attachments/assets/7c012737-d0ed-4d62-82b5-511427b94b39" />
+
 
 A differential gear (commonly called a differential) is a special gear system used in vehicles to allow the drive wheels to rotate at different speeds while still being powered by the same engine or motor. When combined with the Ackermann steering mechanism, it enables smoother and more efficient movement for our robot.
 
@@ -375,7 +394,8 @@ We use this two wheel in back side:</p>
 ### Energy management and inspection
 #### Gravity: URM09 Ultrasonic Distance Sensor 
 <p align="center">
-  <img width="400" height="400" alt="LEGO Wheel and Tire Set 2" src="https://github.com/Frances9/SEN0307/blob/master/DFR0307_WIKI_Cover.jpg?raw=true"/>
+  <img width="600" height="600" alt="LEGO Wheel and Tire Set 2" src="https://github.com/user-attachments/assets/e625ca2f-98a1-4775-826a-608bd83bb610" />
+
 
 This is an ultrasonic sensor with an open dual-probe, employing standard interface of Gravity PH2.0-3P vertical patch socket. The module is compatible with controllers with 3.3V or 5V logical level, such as Arduino and Raspberry Pi.
 
@@ -437,6 +457,7 @@ Perfect for **line-following robots, edge detection, proximity sensing, and Ardu
 | S (Vout)   | A0 |
 
 **How to connect and use the Arduino TCRT5000 R3 tracking sensor**
+<p align="center">
 <img width="1900" height="1060" alt="Wiring diagram (19)" src="https://github.com/user-attachments/assets/76a6c024-2820-456c-9532-8ba95bd674d9" />
 
 **An example Arduino code in English for using the TCRT5000 on an Arduino UNO to detect black and white lines**
@@ -464,12 +485,124 @@ void loop() {
 ```
 
 **Open the Serial Monitor to view the values detected by the TCRT5000 line-tracking sensor on the Arduino.**
+<p align="center">
 <img width="1920" height="1080" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (20)" src="https://github.com/user-attachments/assets/25680ed3-7c46-4c48-a16c-2367ba3ae659" />
 
 Or, to get a clearer view, open the Serial Plotter
-</p>
+<p align="center">
 <img width="448" height="493" alt="image" src="https://github.com/user-attachments/assets/e3a28e8d-9dcf-48e3-ba8d-f94e389bda5e" />
-<img width="911" height="640" alt="image" src="https://github.com/user-attachments/assets/47ba43fc-a86f-439e-8373-483fce86536f" />
+<img width="911" height="640" alt="image" src="https://github.com/user-attachments/assets/bfaeae05-0b8c-4b2e-a407-c1bed7e6859f" />
+
+#### OpenMV Cam H7
+<p align="center">
+  <img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/68657480-1a8d-4b59-bd59-5ddaf186fa74" />
+
+The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real world.
+Description
+The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real world. You can program the OpenMV Cam in high-level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high-level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and videos on external events or execute machine vision algorithms to figure out how to control your I/O pins.
+
+**Features**
+- The STM32H743VI ARM Cortex M7 processor running at 480 MHz with 1MB of RAM and 2 MB of flash. All I/O pins output 3.3V and are 5V tolerant. The processor has the following I/O interfaces:
+- A full-speed USB (12Mbs) interface to your computer. Your OpenMV Cam will appear as a Virtual COM Port and a USB Flash Drive when plugged in.
+- A μSD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to record video and easy pull machine vision assets off of the μSD card.
+- An SPI bus that can run up to 100Mbs allowing you to easily stream image data of the system to either the LCD Shield, the WiFi Shield, or another microcontroller.
+- An I2C Bus, CAN Bus, and an Asynchronous Serial Bus (TX/RX) for interfacing with other microcontrollers and sensors.
+- A 12-bit ADC and a 12-bit DAC.
+- Three I/O pins for servo control.
+- Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board).
+- And, an RGB LED and two high power 850nm IR LEDs.
+- A removable camera module system allowing the OpenMV Cam H7 to interface with different sensors:
+- The OpenMV Cam H7 comes with an OV7725 image sensor is capable of taking 640x480 8-bit grayscale images or 640x480 16-bit RGB565 images at 60 FPS when the resolution is above 320x240 and 120 FPS when it is below. Most simple algorithms will run at above 60 FPS. Your image sensor comes - with a 2.8mm lens on a standard M12 lens mount. If you want to use more specialized lenses with your image sensor you can easily buy and attach them yourself.
+- A LiPo battery connector is compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotics applications.
+
+<p align="center">
+ <img src = "https://github.com/user-attachments/assets/fee60e43-5610-420a-bcc1-42207c0f30fc" width="500px" />
+
+  
+**Applications**
+- **Frame Differencing** → detect motion for security systems  
+- **Color Tracking** → track up to 16 colors for line following, target tracking, etc.  
+- **Marker Tracking** → detect multi-color tags for object identification  
+- **Face Detection** → Haar Cascade-based face & eye recognition  
+- **Eye Tracking** → detect gaze direction to control systems  
+- **Person Detection** → TensorFlow Lite model for human detection  
+- **Optical Flow** → measure translation for quadcopters & stabilization  
+- **QR/Barcode Recognition** → decode QR codes, DataMatrix, and 1D barcodes  
+- **AprilTag Tracking** → robust fiducial marker detection (12 FPS @ 160×120)  
+- **Line Detection** → infinite & segmented line recognition (ideal for robocars)  
+- **Circle Detection** → simple shape detection  
+- **Rectangle Detection** → quad-based detection using AprilTag library  
+- **Template Matching** → locate predefined patterns/images  
+- **Image Capture** → save BMP/JPG/PPM/PGM images (with overlays)  
+- **Video Recording** → record MJPEG, GIF, or RAW video (with live vision overlays)  
+- **TensorFlow Lite Support** → run custom ML models for classification/segmentation  
+
+**Technical Specifications**
+
+| Component | Specification |
+|-----------|---------------|
+| **Processor** | i.MX8M Quad Processor ARM |
+| | 800 MHz Quad Cortex-A53 |
+| | Quad-Core Score: 2500 |
+| | Single-Core Score: 650 |
+| | Compute & Graphics Test: 2,100 |
+| **RAM System** | LPDDR4/4X, 1866MHz/Quad |
+| | Capacity: 2GB to 8GB |
+| | Max Speed: 14.9 GB/s |
+| **Flash System** | 128GB Broadcom |
+| | eMMC Controller Flash Drive |
+| | CNEX8A |
+| **Specialized System for Performance** | 22bit Input |
+| | Resolution |
+| | 24bit Output |
+| **Maximum Power Consumption** | Automotive-spec PoE and wifi modules |
+| | Operating: 19W |
+| | Maximum: 45W |
+| | Charging: 80W+ wifi 0dB and wifi modules |
+| | In-Use: 80W + wifi 0dBand and wifi |
+| | Sc.PoE: 45W + ultra-wifi and wifi |
+| **Base PoE** | Small Graphic - Classic |
+| | Features: EIA |
+| | Storage: 2.5" |
+| | - Best fit- MRBA vs MRBA |
+| | Support: GPIO, I²C |
+| | By 24Vgp: 35mm connectivity |
+
+**Power Consumption Details**
+
+| Operation Mode | Power Consumption |
+|----------------|-------------------|
+| **Power Specification** | 180W to 65 kW |
+| **Input: 3.3V Level** | 180W to 45 kW |
+| **Input: 5V Level** | 180W to 45 kW |
+| **2.0V to 6V Level** | 180W to 45 kW |
+
+**Temperature Range**
+
+| Parameter | Range |
+|-----------|--------|
+| **Operating** | -20°C to 85°C |
+| **Operating** | -40°C to 70°C |
+
+**Additional Notes**
+
+- The device features automotive-grade components for enhanced reliability
+- Power over Ethernet (PoE) support included
+- Multiple voltage level support for flexible power management
+- Wide operating temperature range for various environmental conditions
+- Expandable RAM configuration from 2GB to 8GB
+- High-speed connectivity with GPIO and I²C support
+
+**ECM/NTS**
+*Additional specifications and compliance information available upon request*
+
+**Dimensions**
+<p align="center">
+<img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/7ab24d86-e486-42e2-84ad-5423c6333ee5" />
+
+**Pin Out**
+<p align="center">
+<img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/8e430f49-7101-46b0-b76e-b89e537ff41e" />
 
 
 
