@@ -15,7 +15,7 @@
 ## Table of Contents
 - [About Team 👥](#about-team-)
 - [Project Overview 🧠](#project-overview-)
-- [Timeline 🗓️](#timeline-)
+- [Timeline 🗓️](#timeline-%EF%B8%8F)
 - [Robot Design](#robot-design)
 
 
