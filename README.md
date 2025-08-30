@@ -1,4 +1,4 @@
-# 🏎️Team F1 – WRO Future Engineers 2025🏁
+# **🏎️Team F1 – WRO Future Engineers 2025🏁**
 </p>
 </p>
 <br>
@@ -17,7 +17,7 @@
 - [Robot Design](#robot-design)
 
 
-##  About Team 👥
+#  About Team 👥
 <br>
 <img width="900" height="900" alt="Team Picture" src="https://github.com/user-attachments/assets/0ad36b5e-7fa6-46e5-b5da-e2c7ccac86ae" />
 </p>
@@ -32,7 +32,7 @@ Our team is called **"F1"**, inspired by our shared enthusiasm for **Formula 1 r
 
 <br>
 
-## 🧑‍🤝‍🧑 Meet the Team
+# 🧑‍🤝‍🧑 Meet the Team
 **1.Chaiwat Chinsupawat - Document Designer**
 <p align="center">
 <img width="800" height="800" alt="Chaiwat Picture" src="https://github.com/user-attachments/assets/1da090ba-b62e-46af-9dcf-b91a0554227f" />
@@ -67,7 +67,7 @@ Peradon was chosen as the Programmer because of his strong skills in coding and 
 
 <br>
 
-## 🤝 How We Work
+# 🤝 How We Work
 
 Even though we come from different age groups, we collaborate seamlessly. Each of us brings **unique strengths** to the team, and our clearly divided roles allow us to stay focused and productive.
 
@@ -78,7 +78,7 @@ We believe in:
 
 <br>
 
-## 💬 Our Mission
+# 💬 Our Mission
 
 > _"We’re not just building robots — we’re building a future."_  
 
@@ -92,7 +92,7 @@ in another and grow as future engineers. No matter the challenge, we stay focuse
 ---
 
 
-## Project Overview 🧠
+# Project Overview 🧠
 
 Our goal is clear: **Design, build, and innovate our own self-driving robot.**
 
@@ -105,7 +105,7 @@ We believe in:
 
 ---
 
-## Timeline 🗓️
+# Timeline 🗓️
 
 | Phase               | Month     | Goal                                           |
 |---------------------|-----------|------------------------------------------------|
@@ -117,7 +117,7 @@ We believe in:
 
 ---
 
-## Robot Design
+# Robot Design
 
 For the past two years, we have continuously refined our robot through participation in the WRO Future Engineers competition, advancing to the international rounds twice:
 -  **WRO PANAMA 2023**  
@@ -127,7 +127,7 @@ These experiences gave us valuable insights into how to design robots that are n
 
 ---
 
-### 🖥️ Design Software
+## 🖥️ Design Software
 
 At the beginning of this year’s design process, we experimented with five different design tools to explore their capabilities and limitations. While Blender offered a user-friendly and intuitive interface, we realized that it lacked the precision required for engineering-grade robotics. For the first time, we made the shift to a professional-grade CAD tool — Autodesk Fusion 360.
 
@@ -137,9 +137,9 @@ By combining CAD precision with our team’s 3D design expertise, we have create
 
 ---
 
-### ⚙️ Design Hardware
+## ⚙️ Design Hardware
 
-#### **Bambu Lab X1C 3D Printer**
+### **Bambu Lab X1C 3D Printer**
 
 <p align="center">
    <img width="600" height="600" alt="3D Printer" src="https://github.com/user-attachments/assets/058b0f5a-80d6-4d0f-a3c5-22a8b9f47e86" />
@@ -176,7 +176,7 @@ We chose the Bambu Lab X1C 3D Printer because it is widely recognized and popula
 
 ---
 
-## Steering Mechanic Part
+# Steering Mechanic Part
 <p align="center">
 <img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/674a9b35-0594-456e-b30d-0957e6978937" />
 
@@ -196,7 +196,7 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 - **Weight**: only 20g  
 - **LEGO-compatible mount**, making it easy to attach to the robot fram
   
-### **⚙️ Geek Servo 360**
+## **⚙️ Geek Servo 360**
 
 <p align="center">
 <img width="600" height="600" alt="Greek servo" src="https://github.com/user-attachments/assets/49665430-7fd6-42ca-9f63-365dcc6b2665" /> 
@@ -232,9 +232,9 @@ Why We Use It:
 
 ---
 
-## 🚗 Drive and Power Train
+# 🚗 Drive and Power Train
 
-### **Chihai Motor 25-370K**
+## **Chihai Motor 25-370K**
 
 <p align="center">
   <img width="600" height="600" alt="Motor12V 980RPM" src="https://github.com/user-attachments/assets/9bd6fa35-99c0-4764-aa84-4913e5cc0cb3" />
@@ -295,7 +295,7 @@ Before selecting this motor, our team initially used the LEGO™ Power Functions
 🔗 [View Chihai Motor 25-370K Low Noise DC 6V / 12V / 24V Wall Climbing Car Motor WPL B-14 for Remote Control Car, DIY Smart Robot](https://www.alibaba.com/product-detail/Chihai-Motor-25-370K-Low-Noise_62197406831.html?spm=a2700.shop_plser.41413.18.65c52728k1NrzC)
 
 ---
-### **LEGO Technic Differential gear** 
+## **LEGO Technic Differential gear** 
 <p align="center">
  <img width="550" height="550" alt="LEGO Differential gear" src="https://github.com/user-attachments/assets/7c012737-d0ed-4d62-82b5-511427b94b39" />
 
@@ -313,7 +313,7 @@ The System includes multiple parts:
    
 ---
 
-### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
+## **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
 
 <p align="center">
   <img width="500" height="500" alt="LEGO Wheel and Tire Set" src="https://github.com/user-attachments/assets/38aea1b2-3efb-408e-b1d6-5a0acd1d711c"/>
@@ -418,8 +418,8 @@ We use this two wheel in back side:</p>
 </table>
 
 ---
-## Energy management and inspection
-### Gravity: URM09 Ultrasonic Distance Sensor 
+# Energy management and inspection
+## Gravity: URM09 Ultrasonic Distance Sensor 
 <p align="center">
   <img width="600" height="600" alt="LEGO Wheel and Tire Set 2" src="https://github.com/user-attachments/assets/e625ca2f-98a1-4775-826a-608bd83bb610" />
 
@@ -437,6 +437,10 @@ In our project for WRO Future Engineers 2025, the URM09 is used to:
 
 Beyond this project, the URM09 can also be applied in a wide range of scenarios, such as obstacle-avoidance robots, car reversing alarms, and smart doorbells. With its high accuracy, wide compatibility, and robust design, the URM09 plays a crucial role in ensuring efficient navigation and reliable performance in robotic systems.
 
+**Flowchart**
+<p align="center">
+   <img width="302" height="667" alt="สกรีนช็อต 2025-08-30 172445" src="https://github.com/user-attachments/assets/6484e958-5b09-4e9f-945a-89c6d5876605" />
+
 
 **Specification**
 - Power Supply: 3.3~5.5V DC
@@ -452,7 +456,7 @@ Beyond this project, the URM09 can also be applied in a wide range of scenarios,
 🔗 [View Ultrasonic Distance Sensor](https://www.dfrobot.com/product-1832.html?search=sen0304&gad_source=1&gad_campaignid=834127384&gbraid=0AAAAADucPlCx01OnxqTV_cLHiS91DnBDs&gclid=Cj0KCQjwwsrFBhD6ARIsAPnUFD3pFs_CTZroKhgOZV6iX6MOYj0CWufIUvYrHO_Eu6Frj2XfOb1l_FAaAo3oEALw_wcB)
 ---
 
-### ZX-03 Reflective Infrared Sensor Module
+## ZX-03 Reflective Infrared Sensor Module
 <p align="center">
   <img width="475" height="475" alt="BLUE Light Sensor" src="https://github.com/user-attachments/assets/d24a4812-1aa1-4804-b3f3-0850d43454d7" />
   <img width="400" height="400" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/ede64ba2-939b-4fe5-bf36-bd700def520f" />
@@ -533,7 +537,7 @@ Or, to get a clearer view, open the Serial Plotter
 🔗 [View ZX-03 Infrared Reflective Sensor](https://inex.co.th/home/product/zx-03/)
 
 ---
-### OpenMV Cam H7
+## OpenMV Cam H7
 <p align="center">
   <img width="700" height="700" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/68657480-1a8d-4b59-bd59-5ddaf186fa74" /> 
   
@@ -546,9 +550,10 @@ In our project for WRO Future Engineers 2025, the OpenMV Cam is used for color d
 - The camera is also used to detect parking areas before the robot enters, ensuring precise and safe parking.
 
 By integrating the OpenMV Cam, our robot gains intelligent perception capabilities, allowing it to react dynamically to obstacles and navigate autonomously in complex environments.
+<p align="center">
+ <img src = "https://github.com/user-attachments/assets/5496bd87-4c8a-4180-811b-48cc4f64b0d1" width="500px" />
 
 
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a88f3bf7-7fa5-4d44-9f7f-b1fd977c09d3" />
 
 **Features**
 - The STM32H743VI ARM Cortex M7 processor running at 480 MHz with 1MB of RAM and 2 MB of flash. All I/O pins output 3.3V and are 5V tolerant. The processor has the following I/O interfaces:
@@ -647,17 +652,433 @@ By integrating the OpenMV Cam, our robot gains intelligent perception capabiliti
 
 **Dimensions**
 <p align="center">
-<img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/7ab24d86-e486-42e2-84ad-5423c6333ee5" />
+<img width="600" height="600" alt="Dimension" src="https://github.com/user-attachments/assets/7ab24d86-e486-42e2-84ad-5423c6333ee5" />
 
 **Pin Out**
 <p align="center">
-<img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/8e430f49-7101-46b0-b76e-b89e537ff41e" />
+<img width="600" height="600" alt="Pin" src="https://github.com/user-attachments/assets/8e430f49-7101-46b0-b76e-b89e537ff41e" />
 </p>
 
 🔗 [View OpenMV Cam H7](https://openmv.io/products/openmv-cam-h7)
 
 ---
   
+## SEN 0253
+<p align="center">
+<img width="400" height="400" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (34)" src="https://github.com/user-attachments/assets/741ad15e-eb57-48ac-afc9-9784bae76ae3" />
+
+The Gravity: BNO055 + BMP280 10DOF AHRS is an advanced sensor module that integrates BNO055 and BMP280 on a single board, creating a compact 10 Degrees-of-Freedom (10DOF) sensor for intelligent orientation and environmental sensing.
+
+BNO055 is a small, powerful 9-axis Absolute Orientation Sensor. It is a system-in-package that combines:
+- A triaxial 14-bit accelerometer
+- A triaxial 16-bit gyroscope
+- A triaxial geomagnetic sensor
+- A 32-bit microcontroller
+
+At only 5.2 x 3.8 x 1.1 mm³, it is significantly smaller than comparable discrete or system-on-board solutions. BNO055 not only provides raw data from the accelerometer, gyroscope, and geomagnetic sensors, but also outputs fused data such as quaternions, Euler angles, and vectors. Its built-in MCU handles complex sensor fusion algorithms, freeing users from manual processing and enabling fast integration into projects like smartphones, wearable devices, and robotics.
+
+BMP280 is an absolute barometric pressure sensor that measures both pressure and temperature, which can be converted to altitude using specific formulas. It uses Bosch’s proven piezoresistive pressure technology, offering high accuracy, linearity, long-term stability, and EMC robustness, making it ideal for mobile and embedded applications.
+
+By combining these two sensors, the 10DOF AHRS module provides orientation and environmental sensing in one compact package. The standard Gravity I2C interface simplifies integration, avoiding the complications of multiple sensors from different vendors and saving time for product innovation. This module is ideal for applications such as:
+- Wearable hardware
+- Augmented reality and immersive gaming
+- Personal health and fitness devices
+- Indoor navigation and robotics
+
+Any application requiring reliable context awareness
+
+In our project, we previously used the ZX-IMU, but we encountered frequent drift and instability in gyroscope readings. To achieve more stable and reliable orientation data, we switched to the Gravity BNO055 + BMP280 10DOF AHRS, which ensures precise navigation and performance in the WRO Future Engineers 2025 competition.
+
+**Can read 3-axis**</p>
+<p align="center">
+ <img src = "https://github.com/user-attachments/assets/7680b645-22b7-431f-b4e1-ac9ce8ebc9c1" width="500px" />
+
+**Sample Code**
+Program Function: Retrieve data from the sensor on the x, y, and z axes, and print it out via the serial port.
+```cpp
+/*!
+  * read_data.ino
+  *
+  * Download this demo to test read data from bno055
+  * Data will print on your serial monitor
+  *
+  * Product: https://www.dfrobot.com.cn/goods-1860.html
+  * Copyright   [DFRobot](https://www.dfrobot.com), 2016
+  * Copyright   GNU Lesser General Public License
+  *
+  * version  V1.0
+  * date  07/03/2019
+  */
+
+#include "DFRobot_BNO055.h"
+#include "Wire.h"
+
+typedef DFRobot_BNO055_IIC    BNO;    // ******** use abbreviations instead of full names ********
+
+BNO   bno(&Wire, 0x28);    // input TwoWire interface and IIC address
+
+// show last sensor operate status
+void printLastOperateStatus(BNO::eStatus_t eStatus)
+{
+  switch(eStatus) {
+  case BNO::eStatusOK:   Serial.println("everything ok"); break;
+  case BNO::eStatusErr:  Serial.println("unknow error"); break;
+  case BNO::eStatusErrDeviceNotDetect:   Serial.println("device not detected"); break;
+  case BNO::eStatusErrDeviceReadyTimeOut:    Serial.println("device ready time out"); break;
+  case BNO::eStatusErrDeviceStatus:    Serial.println("device internal status error"); break;
+  default: Serial.println("unknow status"); break;
+  }
+}
+
+void setup()
+{
+  Serial.begin(115200);
+  bno.reset();
+  while(bno.begin() != BNO::eStatusOK) {
+    Serial.println("bno begin faild");
+    printLastOperateStatus(bno.lastOperateStatus);
+    delay(2000);
+  }
+  Serial.println("bno begin success");
+}
+
+#define printAxisData(sAxis) \
+  Serial.print(" x: "); \
+  Serial.print(sAxis.x); \
+  Serial.print(" y: "); \
+  Serial.print(sAxis.y); \
+  Serial.print(" z: "); \
+  Serial.println(sAxis.z)
+
+void loop()
+{
+  BNO::sAxisAnalog_t   sAccAnalog, sMagAnalog, sGyrAnalog, sLiaAnalog, sGrvAnalog;
+  BNO::sEulAnalog_t    sEulAnalog;
+  BNO::sQuaAnalog_t    sQuaAnalog;
+  sAccAnalog = bno.getAxis(BNO::eAxisAcc);    // read acceleration
+  sMagAnalog = bno.getAxis(BNO::eAxisMag);    // read geomagnetic
+  sGyrAnalog = bno.getAxis(BNO::eAxisGyr);    // read gyroscope
+  sLiaAnalog = bno.getAxis(BNO::eAxisLia);    // read linear acceleration
+  sGrvAnalog = bno.getAxis(BNO::eAxisGrv);    // read gravity vector
+  sEulAnalog = bno.getEul();                  // read euler angle
+  sQuaAnalog = bno.getQua();                  // read quaternion
+  Serial.println();
+  Serial.println("======== analog data print start ========");
+  Serial.print("acc analog: (unit mg)       "); printAxisData(sAccAnalog);
+  Serial.print("mag analog: (unit ut)       "); printAxisData(sMagAnalog);
+  Serial.print("gyr analog: (unit dps)      "); printAxisData(sGyrAnalog);
+  Serial.print("lia analog: (unit mg)       "); printAxisData(sLiaAnalog);
+  Serial.print("grv analog: (unit mg)       "); printAxisData(sGrvAnalog);
+  Serial.print("eul analog: (unit degree)   "); Serial.print(" head: "); Serial.print(sEulAnalog.head); Serial.print(" roll: "); Serial.print(sEulAnalog.roll);  Serial.print(" pitch: "); Serial.println(sEulAnalog.pitch);
+  Serial.print("qua analog: (no unit)       "); Serial.print(" w: "); Serial.print(sQuaAnalog.w); printAxisData(sQuaAnalog);
+  Serial.println("========  analog data print end  ========");
+
+  delay(1000);
+}
+```
+**Library**
+[BNO055 Library](https://github.com/DFRobot/DFRobot_BNO055)
+[BMP280 Library](https://github.com/DFRobot/DFRobot_BMP280)
+
+**Features**
+BNO055:
+- Outputs fused sensor data: quaternions, euler angles, rotation vector, linear acceleration, gravity, heading.
+- 3 sensors in one device: 16-bit gyroscope, 14-bit accelerometer, geomagnetic sensor
+- Intelligent Power Management: normal, low power and suspend mode available
+BMP280：
+- Barometric pressure & Temperature sensor
+
+**Specification**
+| Component | Specification |
+|-----------|---------------|
+| **Operating Voltage** | 3.3V ~ 5V DC |
+| **Operating Current** | 5mA |
+| **Interface** | Gravity-I2C |
+| **BNO055 Accelerometer** | - Acceleration ranges: ±2g / ±4g / ±8g / ±16g<br>- Low-pass filter bandwidths: 1kHz ~ <8Hz<br>- Operation modes: normal, suspend, low power, standby, deep suspend<br>- On-chip interrupt control: motion-triggered interrupt |
+| **BNO055 Gyroscope** | - Ranges: ±125°/s ~ ±2000°/s<br>- Low-pass filter bandwidths: 523Hz ~ 12Hz<br>- Operation modes: normal, fast power up, deep suspend, suspend, advanced power save<br>- On-chip interrupt control: motion-triggered interrupt |
+| **BNO055 Geomagnetic Sensor** | - Magnetic field range: ±1300μT (x-, y-axis), ±2500μT (z-axis)<br>- Magnetic field resolution: ~0.3μT<br>- Operating modes: low power, regular, enhanced regular, high accuracy<br>- Power modes: normal, sleep, suspend, force |
+| **BMP280 Digital Pressure Sensor** | - Pressure range: 300 ~ 1100 hPa<br>- Relative accuracy: ±0.12 hPa (±1 m)<br>- Absolute accuracy: ±1 hPa (±8.33 m)<br>- Temperature range: 0℃ ~ 65℃<br>- Temperature resolution: 0.01℃ |
+| **Operating Temperature** | -40℃ ~ 80℃ |
+| **Product Dimension** | 32 × 27 mm (1.26 × 1.06") |
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a16f457c-7a51-48b3-8a28-65d478177e06" width="400" />
+
+**Pin Configuration Table**
+
+| Serial Number | Name      | Functionality                          |
+|---------------|-----------|----------------------------------------|
+| 1             | /VCC      | Positive Pole                          |
+| 2             | -/GND     | Negative Pole                          |
+| 3             | C         | I2C-SCL                                |
+| 4             | D         | I2C-SDA                                |
+| 5             | NBOOT     | Boot Mode                              |
+| 6             | RST       | Reset Pin                              |
+| 7             | INT       | Interrupt Output Pin                   |
+| 8             | I2C_ADDR  | BNO055 I2C address Selection           |
+| 9             | PS2       | Protocol Selection Pin 2               |
+| 10            | PS1       | Protocol Selection Pin 1               |
+| 11            | BL_IND    | Bootstrap Instructions                 |
+
+**Protocol Selection (PS1 & PS2)**
+
+| PS1 | PS2 | Functionality             |
+|-----|-----|---------------------------|
+| 0   | 0   | Standard/Fast I2C Interface |
+| 0   | 1   | HID OVER I2C              |
+| 1   | 0   | UART Interface            |
+| 1   | 1   | Reserved                  |
+
+<p align="center">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/047d6eb7-2788-4f0e-a70d-8967dff2d8a0" />
+
+---
+
+# Controller
+
+## Major Contoller
+### UNO R3
+<p align="center">
+<img width="500" height="500" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (39)" src="https://github.com/user-attachments/assets/8966b1b2-aa25-465b-9f9e-c40de67f3ca8" />
+
+The **Arduino Uno R3** is one of the most widely used and reliable microcontroller boards based on the **ATmega328P**.  
+It provides a simple yet powerful platform for building embedded and robotic systems.
+
+**Key Features ([docs.arduino.cc](https://docs.arduino.cc/hardware/uno-rev3/#features)):**
+- Microcontroller: **ATmega328P (8-bit AVR)**
+- Clock speed: **16 MHz**
+- Digital I/O Pins: **14** (6 with PWM output)
+- Analog Input Pins: **6**
+- Memory: **32 KB Flash**, **2 KB SRAM**, **1 KB EEPROM**
+- Power: **USB (5V)** or **External (7–12V)**
+- Onboard reset button, ICSP header, and replaceable MCU chip
+
+**Why We Chose Arduino Uno R3**
+
+1. **Stability and Reliability**  
+   The Uno R3 is known for its robust design and consistent performance, making it highly suitable for competitions where stability is crucial.
+
+2. **Full Feature Set for Robotics**  
+   With enough I/O pins, PWM support, and memory, it is capable of handling sensors, motors, and logic required in autonomous robot design.
+
+3. **Compliance with WRO Future Engineers Rules**  
+   According to the WRO Future Engineers regulations, teams must use **open-source hardware** provided through **Grammago**.  
+   The Arduino Uno R3, being the most stable and well-supported open-source controller, was therefore the **best choice for our project**.
+
+**Power Tree**
+<p align="center">
+<img width="701" height="688" alt="สกรีนช็อต 2025-08-30 204318" src="https://github.com/user-attachments/assets/ec5fea85-694d-4251-8649-0cdd904abbe7" />
+
+**Pin Out**
+<p align="center">
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/40312495-4d8f-4694-9d87-5779dae87a45" />
+
+
+**Specifications**
+
+| Feature               | Specification                                                                 |
+|------------------------|-------------------------------------------------------------------------------|
+| **Microcontroller**    | ATmega328P (8-bit AVR)                                                       |
+| **Operating Voltage**  | 5 V                                                                          |
+| **Input Voltage**      | 7–12 V (recommended), 6–20 V (limits)                                        |
+| **Digital I/O Pins**   | 14 (6 support PWM output)                                                    |
+| **Analog Input Pins**  | 6                                                                            |
+| **DC Current per I/O** | 20 mA                                                                        |
+| **DC Current for 3.3V**| 50 mA                                                                        |
+| **Flash Memory**       | 32 KB (0.5 KB used by bootloader)                                            |
+| **SRAM**               | 2 KB                                                                         |
+| **EEPROM**             | 1 KB                                                                         |
+| **Clock Speed**        | 16 MHz                                                                       |
+| **LED_BUILTIN**        | Pin 13                                                                       |
+| **USB Connection**     | Type-B USB                                                                   |
+| **Other Interfaces**   | ICSP header, power jack, reset button                                        |
+| **Dimensions**         | 68.6 mm × 53.4 mm                                                            |
+| **Weight**             | ~25 g                                                                        |
+
+---
+
+## Expansion Board
+### L298P DC Motor Drive Shield
+<p align="center">
+<img width="500" height="500" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (40)" src="https://github.com/user-attachments/assets/3dd79142-474b-49e4-bf49-9f39490c0db7" />
+
+The **L298P Motor Driver Shield** is a dual full-bridge driver module based on the **L298P IC**.  
+It is designed as an **Arduino Uno compatible shield**, making it simple to stack directly on the board without additional wiring.  
+This shield allows control of **two DC motors** independently (or one stepper motor) with support for both **speed (PWM)** and **direction control**.  
+It can deliver up to **2A peak per channel**, making it suitable for driving medium-sized DC motors used in robotics and automation projects.  
+
+**Why We Use the L298P Shield**
+
+1. **Seamless Arduino Integration**  
+   Its shield format makes it directly compatible with the **Arduino Uno R3**, which is our main controller board, ensuring easy wiring and stable operation.
+
+2. **Dual Motor Control**  
+   The ability to control **two DC motors simultaneously** is essential for our robot’s differential drive system.
+
+3. **Reliable and Proven Driver**  
+   The L298P is one of the most popular and well-documented motor drivers, known for its stability in competitions and projects.
+
+4. **WRO Future Engineers Compliance**  
+   The rules allow the use of open-source shields and expansion boards. Since the L298P is fully compatible and stable, it became the best choice to power and control our driving motors during the competition.
+
+**Product Information**
+- Input voltage logic portion VD: 5 V
+- The driving part of the input voltage VS: VIN Input 6 5 ~ 1 2 V, PWRIN input 4 8 ~ 2 4 V..
+- The logic part of the work current I ss: ≤3 6 m A
+- The driving part of the work current I o: ≤2 A
+- Maximum Power Dissipation: 2 5 W (T = 7 5 ℃)
+- A control signal input level: High: 2 3 V≤V in≤5 V Low: -... 0 3 V≤V in≤1 5 V
+- Working temperature: - 2 5 ℃ ~ + 1 3 0 ℃
+- Drive: Dual high-power H-bridge driver
+
+**Feature**
+- board with L298P motor driver chip, the direct digital IO port with the motherboard (D10 .D11. D12. D13), without cumbersome wiring.
+- Onboard beeper (D4), may be provided reversing alarm ringing.
+- Convenient motor interface, the motor output can be two routes.
+- The two-way Bluetooth interface, can be directly inserted, no wiring.
+- out of the D 2, D 3, D 5, D 6, D 7, D 9, D is not occupied by seven digital interface.
+- a A 0 - A 5 six analog interface.
+* forward and back lights are turned.
+
+**Arduino test code:**
+```cpp
+// Arduino Test Code for L298P Motor Shield
+
+// Motor A
+int E1 = 10;   // Enable Pin for Motor A (PWM)
+int M1 = 12;   // Direction Pin for Motor A
+
+// Motor B
+int E2 = 11;   // Enable Pin for Motor B (PWM)
+int M2 = 13;   // Direction Pin for Motor B
+
+void setup() {
+  pinMode(M1, OUTPUT);
+  pinMode(M2, OUTPUT);
+}
+
+void loop() {
+  // Forward direction
+  for (int value = 0; value <= 255; value += 5) {
+    digitalWrite(M1, HIGH);
+    digitalWrite(M2, HIGH);
+    analogWrite(E1, value);  // PWM Speed for Motor A
+    analogWrite(E2, value);  // PWM Speed for Motor B
+    delay(30);
+  }
+  delay(1000);
+
+  // Backward direction
+  for (int value = 0; value <= 255; value += 5) {
+    digitalWrite(M1, LOW);
+    digitalWrite(M2, LOW);
+    analogWrite(E1, value);  // PWM Speed for Motor A
+    analogWrite(E2, value);  // PWM Speed for Motor B
+    delay(30);
+  }
+  delay(1000);
+}
+```
+
+---
+
+###Uno R3 Sensor Shield V5.0 for Arduino
+<p align="center">
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/1de5b017-d51f-4949-8409-8bfd1bf4839f" />
+
+**Description**
+The Sensor Shield V5.0 is an expansion board designed to simplify the connection of various sensors, servos, and modules to the Arduino Uno and other compatible boards.  
+It breaks out Arduino I/O pins into easy-to-use 3-pin headers (VCC, GND, Signal), making it convenient to connect multiple devices without messy wiring or soldering.  
+This shield supports a wide range of modules such as ultrasonic sensors, IR sensors, servos, relays, and communication modules (Bluetooth, WiFi, etc.).  
+With clearly labeled pins and dedicated ports for I²C and UART communication, the Sensor Shield V5.0 is a versatile tool for rapid prototyping and robotics projects.
+
+**Why We Use It**
+We chose the Sensor Shield V5.0 because it provides a clean, stable, and organized way to connect multiple sensors and modules to the Arduino Uno.  
+For the **WRO Future Engineers 2025 competition**, wiring stability and reliability are critical during testing and competition rounds.  
+This shield eliminates the risk of loose jumper wires, saves time during setup, and ensures error-free sensor integration.  
+It allows us to quickly swap or test different sensors without rewiring the entire circuit, which is especially useful in competitions where adjustments are often needed.
+
+<p align="center">
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/c48351a4-7f28-4b8b-8f7f-a07bc2193c24" />
+
+--- 
+
+# Power Managment
+## FIREFOX Li-Polymer BATTERRY 20C 1300mAh/11.1V
+<p align="center">
+ <img width="500" height="650" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (44)" src="https://github.com/user-attachments/assets/943dc71d-56b5-4126-8e77-948d3d97b28b" />
+
+**Description**
+The Firefox Li-Polymer Battery (20C, 1300mAh, 11.1V) is a high-performance rechargeable Li-Po battery designed to provide stable and powerful current output for motors and robotics applications.  
+With its 20C discharge rate, the battery can deliver bursts of high current, making it suitable for driving motors that require strong torque and consistent performance.  
+Its compact size and lightweight build make it ideal for robotics projects where both efficiency and power-to-weight ratio are important.
+
+**Why We Use It**
+We selected the **Firefox Li-Polymer 11.1V 1300mAh** battery because it provides enough power to run the **Chihai Motor 25-370K** at full efficiency.  
+During testing, we found that this battery delivers strong current without quickly discharging, ensuring longer operation time.  
+
+In previous years, we used the **Helicox 2200mAh (7.4V / 11.1V) 30C** battery, but we faced the problem that it drained too quickly, lasting only 2–3 runs before needing replacement.  
+To solve this issue, we switched to the Firefox Li-Po, which maintains more stable discharge characteristics and matches our system’s power demand better.  
+
+This makes the Firefox battery the best balance between **power, stability, and endurance**, giving our robot reliable performance throughout the **WRO Future Engineers 2025** challenge.
+
+| Specification      | Details                  |
+|-------------------|-------------------------|
+| **Type**           | Lithium Polymer (Li-Po), 3 cells, 20C |
+| **Voltage**        | 11.1V                   |
+| **Capacity**       | 1200mAh                 |
+| **Length**         | 7 cm                     |
+| **Width**          | 4.2 cm                   |
+| **Thickness**      | 1.6 cm                   |
+
+---
+
+##On/Off Switch : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
+This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. 
+
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/On-off%20Switch.png" width = "400">
+
+---
+
+## **Step-down** : HW-360 V6.0
+This is a step-down DC-DC module. It comes with a status indicator light, a display screen that shows the voltage meter, and self-calibration of the voltage meter. The electrical voltage has an error of 0.05 V, with a measuring range of 0–40 V. We need this step down to show us how long until we need to recharge the battery.
+
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Stepdown%20(1).png" width = "400">
+
+<br><br>
+
+**Specification**
+
+**Input**
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Input voltage           | DC 4.0 ~ 38V                           |
+
+**Output**
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Output voltage          | DC 1.25V ~ 36V continuously adjustable |
+| Output current          | Max 5A                                 |
+| Output power            | Up to 75W                              |
+
+**Measurements**
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Voltmeter error         | ± 0.05V                               |
+| Measure range           | 0 ~ 40V                               |
+
+**Performance**
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Conversion efficiency   | Up to 96%                              |
+| Load regulation         | S (I) ≤ 0.8%                           |
+| Voltage Regulation      | S (u) ≤ 0.8%                           |
+
+---
+
 
 
 
