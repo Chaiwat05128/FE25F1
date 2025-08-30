@@ -176,7 +176,7 @@ We chose the Bambu Lab X1C 3D Printer because it is widely recognized and popula
 
 ---
 
-### Steering Mechanic Part
+## Steering Mechanic Part
 <p align="center">
 <img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/674a9b35-0594-456e-b30d-0957e6978937" />
 
@@ -196,7 +196,7 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 - **Weight**: only 20g  
 - **LEGO-compatible mount**, making it easy to attach to the robot fram
   
-#### **⚙️ Geek Servo 360**
+### **⚙️ Geek Servo 360**
 
 <p align="center">
 <img width="600" height="600" alt="Greek servo" src="https://github.com/user-attachments/assets/49665430-7fd6-42ca-9f63-365dcc6b2665" /> 
@@ -232,17 +232,19 @@ Why We Use It:
 
 ---
 
-### 🚗 Drive and Power Train
+## 🚗 Drive and Power Train
 
-#### **Chihai Motor 25-370K**
+### **Chihai Motor 25-370K**
 
 <p align="center">
   <img width="600" height="600" alt="Motor12V 980RPM" src="https://github.com/user-attachments/assets/9bd6fa35-99c0-4764-aa84-4913e5cc0cb3" />
 
-  
-SPG20HP-20K is also well-known as GM25 motor, a small-size geared motor coupled with a 20:1 gearbox that is able to produce 225mN.m torque with 980 RPM (no load). It is a DC geared motor, ideal for building small-sized mobile robots for sumo, small automation models, and of course other applications too. With the standard size and variety of gear ratios, users can always change the motor without changing the existing robot design.
+The SPG20HP-20K, also well-known as the GM25 motor, is a compact DC geared motor paired with a 20:1 gearbox. It can deliver up to 225 mN·m torque with a no-load speed of 980 RPM, making it highly suitable for small-sized mobile robots, sumo robots, and other automation projects. With its standard size and availability of different gear ratios, the motor can be easily swapped without requiring modifications to the robot’s design.
 
-The rated voltage is 12V. Lower voltage might not have enough torque to drive the wheel or mechanism; higher voltage will provide higher torque and higher speed, but it will shorten the life of the motor. You may need the 10A Sumo Robot Controller to control this motor
+The rated operating voltage of this motor is 12V. Running it at a lower voltage may result in insufficient torque to drive wheels or mechanisms effectively, while using a higher voltage can increase torque and speed but may also reduce the overall lifespan of the motor.
+
+Before selecting this motor, our team initially used the LEGO™ Power Functions Large Motor as the main driving motor. However, during testing we encountered a major issue: when reducing the speed, the motor did not provide enough torque to reliably move the robot. This limitation made it unsuitable for our competition requirements. As a solution, we switched to the Chihai Motor 25-370K, which offers both the torque and reliability necessary to ensure stable movement and performance throughout the WRO Future Engineers 2025 challenge.
+
 
 **Specification**
 - High Power
@@ -293,7 +295,7 @@ The rated voltage is 12V. Lower voltage might not have enough torque to drive th
 🔗 [View Chihai Motor 25-370K Low Noise DC 6V / 12V / 24V Wall Climbing Car Motor WPL B-14 for Remote Control Car, DIY Smart Robot](https://www.alibaba.com/product-detail/Chihai-Motor-25-370K-Low-Noise_62197406831.html?spm=a2700.shop_plser.41413.18.65c52728k1NrzC)
 
 ---
-#### **LEGO Technic Differential gear** 
+### **LEGO Technic Differential gear** 
 <p align="center">
  <img width="550" height="550" alt="LEGO Differential gear" src="https://github.com/user-attachments/assets/7c012737-d0ed-4d62-82b5-511427b94b39" />
 
@@ -311,7 +313,7 @@ The System includes multiple parts:
    
 ---
 
-#### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
+### **LEGO 8pc Technic Wheel and Tire Set** (Mindstorms NXT/EV3 Tyre)**
 
 <p align="center">
   <img width="500" height="500" alt="LEGO Wheel and Tire Set" src="https://github.com/user-attachments/assets/38aea1b2-3efb-408e-b1d6-5a0acd1d711c"/>
@@ -348,7 +350,7 @@ We use only two wheel in the front side
 
 ---
 
-#### Lego Black Tire 49.5x20 (x4) and Light Bluish Gray Wheel 30.4mm x 20mm (x4)
+### Lego Black Tire 49.5x20 (x4) and Light Bluish Gray Wheel 30.4mm x 20mm (x4)
 
 <p align="center">
   <img width="600" height="600" alt="LEGO Wheel and Tire Set 2" src="https://github.com/user-attachments/assets/74e26ee1-495c-45ab-b951-dc281750b150"/>
@@ -416,17 +418,25 @@ We use this two wheel in back side:</p>
 </table>
 
 ---
-### Energy management and inspection
-#### Gravity: URM09 Ultrasonic Distance Sensor 
+## Energy management and inspection
+### Gravity: URM09 Ultrasonic Distance Sensor 
 <p align="center">
   <img width="600" height="600" alt="LEGO Wheel and Tire Set 2" src="https://github.com/user-attachments/assets/e625ca2f-98a1-4775-826a-608bd83bb610" />
 
 
-This is an ultrasonic sensor with an open dual-probe, employing standard interface of Gravity PH2.0-3P vertical patch socket. The module is compatible with controllers with 3.3V or 5V logical level, such as Arduino and Raspberry Pi.
+The Gravity: URM09 Ultrasonic Distance Sensor is an open dual-probe module designed with the Gravity PH2.0-3P vertical patch socket interface. It is compatible with controllers operating at both 3.3V and 5V logic levels, such as Arduino and Raspberry Pi, ensuring flexibility and ease of integration.
 
-The sensor comes with built-in temperature compensation, which can greatly reduce measurement error caused by over high/low temperature. It adopts analog voltage output, and provides accurate distance measurement within 2-500cm with 1cm resolution and ±1% accuracy. The design of dual probe effectively decreases the dead zone. Users can check the measurement process conveniently by the onboard indicator.
+This sensor includes built-in temperature compensation, which significantly reduces measurement errors under extreme temperature conditions. It supports distance measurement from 2 cm to 500 cm, with 1 cm resolution and ±1% accuracy. The dual-probe design effectively minimizes the dead zone, while the onboard indicator allows convenient monitoring of the measurement process.
+<p align="center">
+<img width="600" height="600" alt="Beam Angle" src="https://github.com/user-attachments/assets/83c1edf1-1e85-480b-921f-edb221d08b4e" /></p>
+In our project for WRO Future Engineers 2025, the URM09 is used to:
 
-This small ranging module can be used in an extensive range of applications, for instance, robots with obstacle avoidance function, backing car annunciator, doorbell etc.
+- Measure the distance between the robot and surrounding walls.
+- Enable wall-tracking to maintain a stable path and avoid collisions.
+- Detect and measure available space in parking areas, allowing the robot to park precisely and safely.
+
+Beyond this project, the URM09 can also be applied in a wide range of scenarios, such as obstacle-avoidance robots, car reversing alarms, and smart doorbells. With its high accuracy, wide compatibility, and robust design, the URM09 plays a crucial role in ensuring efficient navigation and reliable performance in robotic systems.
+
 
 **Specification**
 - Power Supply: 3.3~5.5V DC
@@ -438,16 +448,17 @@ This small ranging module can be used in an extensive range of applications, for
 - Acoustic Frequency: 38~42KHz
 - Frequency: 30Hz Max
 - Dimension: 47mm × 22 mm/1.85×0.87”
-- Distance Formula: Distance=Vout(mV)×520/Vin(mV)
-
+- Distance Formula: Distance=Vout(mV)×520/Vin(mV)</p>
+🔗 [View Ultrasonic Distance Sensor](https://www.dfrobot.com/product-1832.html?search=sen0304&gad_source=1&gad_campaignid=834127384&gbraid=0AAAAADucPlCx01OnxqTV_cLHiS91DnBDs&gclid=Cj0KCQjwwsrFBhD6ARIsAPnUFD3pFs_CTZroKhgOZV6iX6MOYj0CWufIUvYrHO_Eu6Frj2XfOb1l_FAaAo3oEALw_wcB)
 ---
 
-#### ZX-03 Reflective Infrared Sensor Module
+### ZX-03 Reflective Infrared Sensor Module
 <p align="center">
   <img width="475" height="475" alt="BLUE Light Sensor" src="https://github.com/user-attachments/assets/d24a4812-1aa1-4804-b3f3-0850d43454d7" />
   <img width="400" height="400" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/ede64ba2-939b-4fe5-bf36-bd700def520f" />
 
 We use a red sensor to detect the blue line, and a blue sensor to detect the red line. The reason is that optical sensors detect objects more effectively when the emitted light wavelength is different from the color of the target surface. The contrast between the sensor light and the line color increases the reflection difference, resulting in higher accuracy and more reliable detection.
+picture turn
 
 **Description**
 This module contains a TCRT5000, which integrates an infrared LED and a phototransistor in a single package. When power is supplied, the LED emits infrared light in a wide beam. If an object is placed in front of the sensor, the phototransistor receives the reflected infrared light and allows current to flow. This generates a voltage drop at the S (Vout) pin. The output voltage level depends on the intensity of the reflected infrared light received by the phototransistor — stronger reflections result in higher output voltage, while weaker reflections produce lower voltage.
@@ -517,14 +528,27 @@ Or, to get a clearer view, open the Serial Plotter
 <p align="center">
 <img width="448" height="493" alt="image" src="https://github.com/user-attachments/assets/e3a28e8d-9dcf-48e3-ba8d-f94e389bda5e" />
 <img width="911" height="640" alt="image" src="https://github.com/user-attachments/assets/bfaeae05-0b8c-4b2e-a407-c1bed7e6859f" />
+</p>
 
-#### OpenMV Cam H7
+🔗 [View ZX-03 Infrared Reflective Sensor](https://inex.co.th/home/product/zx-03/)
+
+---
+### OpenMV Cam H7
 <p align="center">
-  <img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/68657480-1a8d-4b59-bd59-5ddaf186fa74" />
+  <img width="700" height="700" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/68657480-1a8d-4b59-bd59-5ddaf186fa74" /> 
+  
+The OpenMV Cam is a small, low-power microcontroller board that allows developers to easily implement real-world applications using machine vision. It can be programmed using high-level Python scripts through the MicroPython Operating System, which makes handling complex outputs from machine vision algorithms and high-level data structures much simpler than traditional C/C++ programming. Despite this high-level approach, users still have full control over the OpenMV Cam’s I/O pins, enabling precise interactions with sensors, motors, and other hardware components.
 
-The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real world.
-Description
-The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real world. You can program the OpenMV Cam in high-level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high-level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and videos on external events or execute machine vision algorithms to figure out how to control your I/O pins.
+Users can trigger picture or video capture based on external events, or execute machine vision algorithms to make real-time decisions for controlling I/O pins.
+
+In our project for WRO Future Engineers 2025, the OpenMV Cam is used for color detection and parking detection:
+- During the Obstacle Challenge, the camera identifies block colors. If a block is green, the robot will turn around it to the left; if the block is red, it will turn around it to the right.
+- The camera is also used to detect parking areas before the robot enters, ensuring precise and safe parking.
+
+By integrating the OpenMV Cam, our robot gains intelligent perception capabilities, allowing it to react dynamically to obstacles and navigate autonomously in complex environments.
+
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a88f3bf7-7fa5-4d44-9f7f-b1fd977c09d3" />
 
 **Features**
 - The STM32H743VI ARM Cortex M7 processor running at 480 MHz with 1MB of RAM and 2 MB of flash. All I/O pins output 3.3V and are 5V tolerant. The processor has the following I/O interfaces:
@@ -628,12 +652,13 @@ The OpenMV Cam is a small, low power, microcontroller board which allows you to 
 **Pin Out**
 <p align="center">
 <img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/8e430f49-7101-46b0-b76e-b89e537ff41e" />
+</p>
 
-#### URM09 Ultrasonic Sensor (Gravity Analog)
-<p align="center">
-<img width="600" height="600" alt=" Ultrasonic Sensor" src="https://github.com/user-attachments/assets/e08f3ed1-502f-4b7c-8907-fb924abec335" />
+🔗 [View OpenMV Cam H7](https://openmv.io/products/openmv-cam-h7)
 
-This is an ultrasonic sensor with an open dual-probe, employing standard interface of Gravity PH2.0-3P vertical patch socket. The module is compatible with controllers with 3.3V or 5V logical level, such as Arduino and Raspberry Pi.
+---
+  
+
 
 
 
