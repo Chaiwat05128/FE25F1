@@ -2,15 +2,13 @@
 </p>
 </p>
 <br>
-<br>
-<br>
 <p align="center">
-  <img width="360" alt="Team F1 logo" src="https://github.com/user-attachments/assets/dcaa8bc4-9314-4e37-97fa-51abc5f054b7"/>
-  <img  width="420" alt="Robot preview" src= "https://github.com/user-attachments/assets/1291b326-65d5-40d3-8a7d-3f70c56097e7"/> 
+  <img width="1500" height="1500" alt="Team F1 logo" src="https://github.com/user-attachments/assets/3aea788b-e355-4f6e-a05b-15c9f4eab933" />
 </p>
 
 
 ---
+
 
 ## Table of Contents
 - [About Team 👥](#about-team-)
@@ -20,8 +18,9 @@
 
 
 ##  About Team 👥
-
-Picture
+<br>
+<img width="900" height="900" alt="Team Picture" src="https://github.com/user-attachments/assets/0ad36b5e-7fa6-46e5-b5da-e2c7ccac86ae" />
+</p>
 
 **Introducing Team F1 from Yothinburana School**
 
@@ -29,9 +28,34 @@ We are a group of students from **Yothinburana School** who share a strong passi
 
 Our team is called **"F1"**, inspired by our shared enthusiasm for **Formula 1 racing**. Beyond just being fans, we dream of one day designing and building our own **self-driving vehicle** — a goal that keeps us motivated and united as a team.
 
+
+
 <br>
 
 ## 🧑‍🤝‍🧑 Meet the Team
+**1.Chaiwat Chinsupawat - Document Designer**
+<p align="center">
+<img width="800" height="800" alt="Chaiwat Picture" src="https://github.com/user-attachments/assets/1da090ba-b62e-46af-9dcf-b91a0554227f" />
+</p>
+Chaiwat was chosen as the Document Designer because he has strong knowledge in both hardware and software. This allows him to clearly explain how the robot is built as well as how it is programmed. He is also skilled at communication, making complex ideas simple and easy to understand for others. In addition, his creativity and attention to detail help him design documents and presentations that are professional and engaging. These abilities make him the perfect fit for the Document Designer role in Team F1.
+</p>
+<br>
+
+**2.Pongpapat Putongkam - Mechanic** 
+<p align="center">
+<img width="800" height="800" alt="Pongpapat Picture" src="https://github.com/user-attachments/assets/5cdba321-4a05-4a82-9704-63d3aae9bff0" />
+</p>
+Pongpapat was chosen as the Mechanic because he has a natural talent for building and designing structures. He is especially good at 3D design, which allows him to create accurate models before building the actual robot. He is also skilled at assembling hardware parts with precision and enjoys solving mechanical challenges. His creativity helps him design strong and reliable robot frames, while his patience and problem-solving skills allow him to fix issues quickly. These abilities make him the best person to take charge of the robot’s hardware and structural components in Team F1.
+</p>
+<br>
+
+3.**Peradon Nimsongprasert - Programmer**
+<p align="center">
+<img width="800" height="800" alt="Peradon Picture" src="https://github.com/user-attachments/assets/73d50254-3d7b-4d75-b897-774f8ff0dfbe" />
+</p>
+Peradon was chosen as the Programmer because of his strong skills in coding and logical thinking. He enjoys solving complex problems and can design efficient algorithms to control the robot. His curiosity drives him to constantly learn new programming techniques, and he is quick to adapt when facing challenges. Even though he is younger than the other members, his energy and passion for technology make him a valuable part of the team. These abilities make him the perfect person to handle the robot’s software and logic in Team F1.
+<br>
+<br>
 
 | Name       | Role                           | Responsibility                                                                 |
 |------------|--------------------------------|--------------------------------------------------------------------------------|
@@ -95,20 +119,21 @@ We believe in:
 
 ## Robot Design
 
-For the past 2 years, we have been competing in the **WRO Future Engineer** and have advanced to the international round twice:  
+For the past two years, we have continuously refined our robot through participation in the WRO Future Engineers competition, advancing to the international rounds twice:
 -  **WRO PANAMA 2023**  
 -  **WRO TÜRKİYE 2024**  
 
-Our current robot design builds on the strengths of our previous generation robots, focusing on **precision, durability, and performance**.
+These experiences gave us valuable insights into how to design robots that are not only competitive but also robust, precise, and adaptable. Our current robot design builds directly on the lessons learned from our previous generations, with a stronger focus on precision engineering, durability under stress, and consistent performance in dynamic environments.
 
 ---
 
 ### 🖥️ Design Software
 
-This year, we started with 5 different design tools.  
-Although **Blender** is very easy and straightforward to use, we decided to switch to a professional tool for the first time — **Autodesk Fusion 360**.  
-With improvements in our electronic components, our mechanical hardware needed to be more precise.  
-Fusion 360 provides **millimeter-level precision**, which is essential for our designs.
+At the beginning of this year’s design process, we experimented with five different design tools to explore their capabilities and limitations. While Blender offered a user-friendly and intuitive interface, we realized that it lacked the precision required for engineering-grade robotics. For the first time, we made the shift to a professional-grade CAD tool — Autodesk Fusion 360.
+
+This decision was driven by the increasing complexity of our robot’s hardware. As we upgraded our electronic components, our mechanical structures also needed to achieve tighter tolerances and higher stability. Fusion 360 enables us to design with millimeter-level accuracy, which is critical for ensuring that sensors, motors, and moving parts align perfectly. Furthermore, its integrated simulation tools allow us to test stress points, weight distribution, and kinematics virtually, reducing trial-and-error during physical assembly.
+
+By combining CAD precision with our team’s 3D design expertise, we have created a robot that not only looks refined in digital models but also translates seamlessly into a high-performance physical build.
 
 ---
 
@@ -162,7 +187,7 @@ mechanism, we encounter alot of sliping at both front and back of the car which 
 we decided to use the "Akerman steering" mechanism. But there are two type of this particular mechanism; "Akerman",which is use globally in any manufactured cars and "Anti-Akerman", which is commonly use in formula series racing cars. "Akerman steering" is when a car is turning, the steering angle is different on both wheel with a tigher angle on the inside and a wider angle on the other side because while turnng the inside wheel turn at a smaller radius while the outside wheel is turning at a larger radius. This eliminate the scrubing(sliding) of the tires and made the turn more smooth. The "Anti-Akerman" on the other hand is the opposite with the outside wheel turnig at a thigher angle generate more grip which is need in a formula car, but it is more difficult to control (the down force generate by formula cars compensate these flaws).
 In short, the "Akerman steering" mechanism is out best choice and will definitely improve out robot.
 
- **How We Steer the Robot**  
+ **How We Steer the Robot?**  
 
 We use the **Geek Servo 360**, a compact yet powerful servo motor with:  
 - **360° rotation**  
@@ -603,6 +628,13 @@ The OpenMV Cam is a small, low power, microcontroller board which allows you to 
 **Pin Out**
 <p align="center">
 <img width="600" height="600" alt="RED Light Sensor" src="https://github.com/user-attachments/assets/8e430f49-7101-46b0-b76e-b89e537ff41e" />
+
+#### URM09 Ultrasonic Sensor (Gravity Analog)
+<p align="center">
+<img width="600" height="600" alt=" Ultrasonic Sensor" src="https://github.com/user-attachments/assets/e08f3ed1-502f-4b7c-8907-fb924abec335" />
+
+This is an ultrasonic sensor with an open dual-probe, employing standard interface of Gravity PH2.0-3P vertical patch socket. The module is compatible with controllers with 3.3V or 5V logical level, such as Arduino and Raspberry Pi.
+
 
 
 
