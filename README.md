@@ -6,9 +6,7 @@
   <img width="1500" height="1500" alt="Team F1 logo" src="https://github.com/user-attachments/assets/3aea788b-e355-4f6e-a05b-15c9f4eab933" />
 </p>
 
-
 ---
-
 
 ## Table of Contents
 - [About Team 👥](#about-team-)
@@ -136,8 +134,7 @@ This decision was driven by the increasing complexity of our robot’s hardware.
 By combining CAD precision with our team’s 3D design expertise, we have created a robot that not only looks refined in digital models but also translates seamlessly into a high-performance physical build.
 
 ---
-
-## ⚙️ Design Hardware
+## 🛠️ Hardware Design
 
 ### **Bambu Lab X1C 3D Printer**
 
@@ -176,6 +173,222 @@ We chose the Bambu Lab X1C 3D Printer because it is widely recognized and popula
 
 ---
 
+### Filament
+#### ABS
+<p align="center">
+<img width="600" height="600" alt="ABS" src="https://github.com/user-attachments/assets/09090947-e4c6-4529-bc2d-197dfd528934" />         
+
+**Description**  
+ABS plastic has a high thermal deformation temperature, making it suitable for outdoor and high-temperature applications.  
+It combines strength, toughness, and durability, making it a common choice for engineering and prototyping.  
+
+**Selling Points** 
+- 💲 **Low cost** – affordable for large-scale use  
+- 🛡️ **Sturdy and durable** – maintains shape under stress  
+- 🔥 **Heat resistant** – withstands higher temperatures than PLA  
+- 🧱 **High toughness** – resists cracking and breaking  
+- 💥 **High impact resistance** – strong against drops or sudden force  
+
+**Filament Properties**  
+| Property | Value |
+|----------|-------|
+| **3D Printing Filament** | ABS |
+| **Density** | 1.04 g/cm³ |
+| **Heat Distortion Temp (0.45MPa)** | 78 °C |
+| **Melt Flow Index** | 12 (220°C / 10kg) |
+| **Tensile Strength** | 43 MPa |
+| **Elongation at Break** | 22 % |
+| **Flexural Strength** | 66 MPa |
+| **Flexural Modulus** | 1177 MPa |
+| **IZOD Impact Strength** | 29 kJ/m² |
+| **Durability** | 8/10 |
+| **Printability** | 8/10 |
+
+**Recommended Printing Parameters**  
+| Parameter | Value |
+|-----------|-------|
+| **Extruder Temperature** | 230 – 270°C (Recommended: 240°C) |
+| **Bed Temperature** | 95 – 110°C |
+| **Fan Speed** | 0% |
+| **Printing Speed** | 40 – 100 mm/s |
+| **Heated Bed** | Required |
+| **Recommended Build Surface** | High temperature tape, PVP solid glue |
+
+---
+#### PLA
+<p align="center">
+<img width="600" height="600" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (46)" src="https://github.com/user-attachments/assets/fda2a729-f04c-47ea-b5a8-bb0b7937d17f" />
+
+**Description**  
+PLA filament has **no pungent smell during printing**, making it safe and environmentally friendly.  
+eSUN PLA is **FDA approved**, ensuring safer use for various applications.  
+
+This filament is suitable for **conceptual models**, **rapid prototyping**, and even **metal parts casting** thanks to its reliable printability and smooth finish.  
+
+**Selling Points**  
+- ⚡ **High-speed printing** – consistent extrusion for faster jobs  
+- ✨ **Smooth surface finish** – high-quality appearance with minimal post-processing  
+- 🖨️ **Easy to print** – great for beginners and professionals alike  
+
+**Recommended Applications**  
+- Concept models  
+- Rapid prototypes  
+- Casting molds  
+- General-purpose 3D prints  
+
+**ePLA-Matte 3D Printing Filament - Parameter Information**
+
+| Property | Value | Unit |
+|----------|-------|------|
+| **3D Printing Filament** | ePLA-Matte | - |
+| **Density** | 1.329 | g/cm³ |
+| **Heat Distortion Temp** | 51 | °C, 0.45MPa |
+| **Melt Flow Index** | 5.8 | g/10min (190°C/2.16kg) |
+| **Tensile Strength (Z)** | 14.31 | MPa |
+| **Tensile Strength (XY)** | 25.976 | MPa |
+| **Elongation at Break (Z)** | 2.26 | % |
+| **Elongation at Break (XY)** | 7.23 | % |
+| **Flexural Strength (Z)** | 21.1 | MPa |
+| **Flexural Strength (XY)** | 42.6 | MPa |
+| **Flexural Modulus (Z)** | 1782.62 | MPa |
+| **Flexural Modulus (XY)** | 2249.05 | MPa |
+| **IZOD Impact Strength (Z)** | 2.15 | kJ/m² |
+| **IZOD Impact Strength (XY)** | 4.7 | kJ/m² |
+| **Heated Bed** | Optional | - |
+| **Recommended Build Surfaces** | Masking paper, PVP solid glue, PEI | - |
+
+**Notes**
+- Z-direction properties typically refer to layer adhesion strength (vertical/build direction)
+- XY-direction properties refer to in-plane strength (horizontal/print plane)
+- Heat distortion temperature measured at 0.45MPa load
+- Melt flow index tested at 190°C with 2.16kg load
+  
+---
+
+### Servo Bracket
+<table align="center">
+  <tr>
+ <td align="center">
+      <img src="https://github.com/user-attachments/assets/d606f34a-bf5e-4981-865c-b761b0245084" width="300"><br>
+      <a href="3D stl CAD filees/servo bracket 1.stl" target="_blank">
+        🔗 View 3D model 2
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+<p>
+The servo bracket is designed to securely hold a standard servo motor in place during robot arm operation.  
+It provides stability by preventing unwanted movement or vibration, ensuring precise and consistent motion.  
+The bracket also makes mounting easier by aligning with the chassis or other structural components.  
+
+By using this bracket, the servo can deliver its full torque without stressing the mounting points,  
+improving both durability and accuracy of the robot arm assembly.
+</p>
+
+---
+
+### Drive Baring 1 & 2
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/2739b92a-cb07-410e-aae7-de2b02904269" width="300"><br>
+      <a href="3D stl CAD filees/Drive Baring 1_.stl" target="_blank">
+        🔗 View 3D model 1
+      </a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/bc111ac0-06e6-45b9-96db-d75275f48476" width="300"><br>
+      <a href="3D stl CAD filees/Drive Baring 2.stl" target="_blank">
+        🔗 View 3D model 2
+      </a>
+    </td>
+  </tr>
+</table>
+
+<div>
+  The upper part of <b>Drive Baring 1 & 2</b> is specifically designed to mount the <b>Chihai Motor 25-370K</b>, ensuring a secure and stable motor placement during operation.
+  <br><br>
+  The lower section is structured to house the <b>gear system</b>, including the <b>differential gear</b> and <b>bearing spacers</b>.  
+  This configuration allows smooth transmission of torque from the motor to the wheels, reduces friction, and improves durability.
+  <br><br>
+  By separating the motor mount (upper) from the gear and bearing housing (lower), this design improves both <b>stability</b> and <b>ease of maintenance</b>.  
+  It also makes it easier to replace or upgrade components without redesigning the entire drive system.
+</div>
+
+---
+
+### Baring Spacer 1 & 2
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0f288f0d-b918-4a09-89b3-0d8e65b15bad" width="300"><br>
+      <a href="3D stl CAD filees/baring spacer 1.stl">
+        🔗 View 3D model 1
+      </a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a0ec5792-b245-4c69-858d-ee9edd3c7e81" width="300"><br>
+      <a href="3D stl CAD filees/baring spacer 2.stl">
+        🔗 View 3D model 2
+      </a>
+    </td>
+  </tr>
+</table>
+
+<div>
+  <b>Baring Spacer 1 & 2</b> are precision components designed to maintain accurate spacing between bearings in the drive system.  
+  They help align the shafts and gears correctly, preventing unnecessary friction and wear during operation.  
+  <br><br>
+  Spacer 1 is used to support the motor-side bearing, ensuring it stays in the optimal position for smooth rotation.  
+  Spacer 2 is positioned near the differential gear to stabilize the assembly and reduce lateral movement.  
+  <br><br>
+  Using these spacers improves the overall <b>durability</b> of the drivetrain, enhances <b>torque transmission efficiency</b>, and allows for easier assembly and maintenance of the motor and gear components.  
+</div>
+
+---
+
+### Gear
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0266bcea-8cbe-445b-a563-0c1268216d6c" width="300"><br>
+      <a href="3D stl CAD filees/gear 3.stl">
+        🔗 View 3D model
+      </a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/d206aa50-76ce-466a-98f8-11d6d3a90dd2" width="300"><br>
+      <a href="3D stl CAD filees/gear 1.stl">
+        🔗 View 3D model
+      </a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/71f457a3-8e79-40a1-8222-701de92570e3" width="300"><br>
+      <a href="3D stl CAD filees/gear 4.stl"> & <a href="3D stl CAD filees/gear 5.stl">
+        🔗 View 3D model
+      </a>
+    </td>
+  </tr>
+</table>
+
+<div>
+  <b>Differential Gear System</b> consists of gears that transmit power from a single motor to both rear wheels efficiently.  
+  <br><br>
+  The gear attached to the motor sits on top of the drive bearing, receiving torque directly from the motor shaft.  
+  An intermediate gear connects the motor gear to the differential assembly, ensuring smooth torque transmission while maintaining alignment with the bearing spacer.  
+  The internal differential gears distribute torque to both rear wheels, allowing them to rotate at different speeds when cornering while keeping both powered.  
+  <br><br>
+  Unlike other components, the <b>gears are printed using PLA filament</b> to ensure they are strong and solid enough to handle the torque load during operation.  
+  This provides <b>durability</b> and <b>reliable performance</b> while keeping the drivetrain lightweight and efficient.
+</div>
+
+---
+
 # Steering Mechanic Part
 <p align="center">
 <img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/674a9b35-0594-456e-b30d-0957e6978937" />
@@ -186,6 +399,21 @@ In our previous generation robot, we use the "Parallel steering" mechanism in wh
 mechanism, we encounter alot of sliping at both front and back of the car which made it drift and lose its balance. So after our research,
 we decided to use the "Akerman steering" mechanism. But there are two type of this particular mechanism; "Akerman",which is use globally in any manufactured cars and "Anti-Akerman", which is commonly use in formula series racing cars. "Akerman steering" is when a car is turning, the steering angle is different on both wheel with a tigher angle on the inside and a wider angle on the other side because while turnng the inside wheel turn at a smaller radius while the outside wheel is turning at a larger radius. This eliminate the scrubing(sliding) of the tires and made the turn more smooth. The "Anti-Akerman" on the other hand is the opposite with the outside wheel turnig at a thigher angle generate more grip which is need in a formula car, but it is more difficult to control (the down force generate by formula cars compensate these flaws).
 In short, the "Akerman steering" mechanism is out best choice and will definitely improve out robot.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/300664f3-946f-4200-871c-14e6507e5e24" width="300"><br>
+      🔗 3D Models: <br>
+      <a href="3D stl CAD filees/STEERING BAR WITH SEN.stl" target="_blank">Steering Bar with Sensor</a><br>
+      <a href="3D stl CAD filees/steering bar AB 1.stl" target="_blank">Steering Bar AB</a><br>
+      <a href="3D stl CAD filees/steering leg LR 1.stl" target="_blank">Steering Leg LR</a><br>
+      <a href="3D stl CAD filees/steering leg spacer 1.stl" target="_blank">Steering Leg Spacer</a><br>
+      <a href="3D stl CAD filees/steering shaft 1.stl" target="_blank">Steering Shaft</a><br>
+      <a href="3D stl CAD filees/steering spacer 1.stl" target="_blank">Steering Spacer</a>
+    </td>
+  </tr>
+</table>
 
  **How We Steer the Robot?**  
 
