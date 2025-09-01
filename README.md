@@ -1309,8 +1309,549 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 
 # Programing
 
+This project implements a multi-functional robot capable of **line following**, **wall tracking**, **compass-based steering**, **obstacle avoidance**, and **motor control** using Arduino, sensors, and OpenMV camera.
 
+---
+# 🚗 Future Engineer 2025 - Self-Driving Car Robot
 
+> **Open Challenge Round**: Autonomous robot car navigation with line detection and wall following
 
+[![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
+[![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![Competition](https://img.shields.io/badge/Competition-Future_Engineer_2025-FF6B6B?style=for-the-badge)](https://www.worldrobotolympiad.org/)
 
+## 🎯 Mission Overview
 
+This autonomous robot car is designed for the **Future Engineer 2025 Open Challenge**. The robot navigates a track by:
+- **Line Detection**: Red lines trigger right turns, blue lines trigger left turns
+- **Wall Following**: Maintains optimal distance from track boundaries
+- **Obstacle Avoidance**: Uses camera vision to detect and avoid blocks
+- **Compass Navigation**: Precise heading control with PID steering
+
+---
+
+## 🏗️ System Architecture
+
+### Core Navigation Algorithm
+```cpp
+void loop() {
+    camera.handleIncomingData();    // 📷 Process camera data
+    getBNO();                       // 🧭 Read compass heading
+    line_detection();               // 🎨 Check for colored lines
+    
+    int distance_wall = getDistance();  // 📏 Measure wall distance
+    
+    // 🎛️ Calculate steering using PID controller
+    int steering_degree = (1 * x) * compassPID.Run(
+        (x * pvYaw) + ((distance_wall - Y)) * 
+        ((float(Blocks_TURN == 'TURN') - 0.5) * 2)
+    ) * -1;
+    
+    // 🚧 Apply obstacle avoidance if blocks detected
+    int final_degree = blend_steering_with_avoidance();
+    
+    // 🎮 Execute movement commands
+    ultra_servo(-pvYaw, Blocks_TURN);  // Rotate sensor to track wall
+    motor_and_steer(final_degree);     // Apply steering and speed
+}
+```
+
+---
+
+## 🔧 Hardware Components
+
+### 📋 Component List
+| Component | Pin | Purpose |
+|-----------|-----|---------|
+| **BNO055 IMU** | I2C | 🧭 Compass heading & orientation |
+| **OpenMV Camera** | Pin 3 (RX) | 📷 Object detection & avoidance |
+| **Motor Driver** | 11,12,13 | ⚡ Speed & direction control |
+| **Steering Servo** | Pin 9 | 🎯 Car direction control |
+| **Ultrasonic Servo** | Pin 8 | 📐 Sensor rotation for wall tracking |
+| **Distance Sensor** | Pin A3 | 📏 Wall distance measurement |
+| **Red Line Sensor** | Pin A1 | 🔴 Red line detection |
+| **Green Line Sensor** | Pin A2 | 🟢 Blue line detection |
+| **Start Button** | Pin A0 | 🔘 Manual start/stop control |
+| **Buzzer** | Pin 4 | 🔊 Audio feedback |
+
+### ⚙️ Pin Configuration
+```cpp
+// Motor Control
+#define ENA 11    // Motor speed control (PWM)
+#define IN1 12    // Motor direction pin 1
+#define IN2 13    // Motor direction pin 2
+
+// Servo Controls
+#define STEER_SRV 9    // Steering servo
+#define ULTRA_SRV 8    // Ultrasonic sensor servo
+
+// Sensors
+#define ULTRA_PIN A3   // Ultrasonic distance sensor
+#define RED_SEN A1     // Red line detection
+#define GEEN_SEN A2    // Green/Blue line detection
+#define BUTTON A0      // Start/stop button
+#define buzzerPin 4    // Audio feedback buzzer
+
+// Communication
+#define RX_PIN 3       // Camera data input (OpenMV)
+#define TX_PIN 5       // Camera data output
+```
+
+---
+
+## 🎨 Line Detection Logic
+
+### 🔴 Red Line → Turn Right
+```cpp
+if (lowest_red_reading > 400) {
+    // Red line detected first
+    TURN = 'L';           // Set turn mode to left wall following
+    Blocks_TURN = 'L';    // Synchronize block avoidance
+    x = -1;               // Set direction multiplier
+    Y = 26;               // Adjust target wall distance
+    compass_offset -= 90; // Rotate compass reference 90° CCW
+}
+```
+
+### 🔵 Blue Line → Turn Left  
+```cpp
+else {
+    // Blue line detected first
+    TURN = 'R';           // Set turn mode to right wall following
+    Blocks_TURN = 'R';    // Synchronize block avoidance  
+    x = 1;                // Set direction multiplier
+    Y = 26;               // Adjust target wall distance
+    compass_offset += 90; // Rotate compass reference 90° CW
+}
+```
+
+### 🎯 Turn Execution Sequence
+1. **🔊 Audio Alert**: Buzzer confirms line detection
+2. **🎨 Color Analysis**: Determine red vs blue line
+3. **🧭 Compass Update**: Adjust heading reference by ±90°
+4. **🚗 Direction Change**: Execute turn using compass feedback
+5. **📏 Resume Tracking**: Continue wall following in new direction
+
+---
+
+## 📐 Wall Following System
+
+### 🎛️ PID Controller Setup
+```cpp
+PID_v2 compassPID(0.6, 0.0001, 0.02, PID::Direct);
+
+void setup() {
+    compassPID.Start(0, 0, 0);
+    compassPID.SetOutputLimits(-180, 180);  // Steering angle limits
+    compassPID.SetSampleTime(10);           // 10ms update rate
+}
+```
+
+### 📏 Distance Calculation
+```cpp
+float getDistance() {
+    // Convert analog reading to distance (0-50cm range)
+    return min(mapf(analogRead(ULTRA_PIN), 0, 1023, 0, 500), 50);
+}
+```
+
+### 🎯 Why Servo Tracks Compass Heading
+The ultrasonic servo rotates based on the robot's compass heading to ensure it always points toward the wall being followed:
+
+```cpp
+void ultra_servo(int degree, char mode_steer) {
+    int middle_degree = 0;
+    if (mode_steer == 'F') middle_degree = 270;      // Forward scan
+    else if (mode_steer == 'R') middle_degree = 360; // Right wall tracking
+    else if (mode_steer == 'L') middle_degree = 180; // Left wall tracking
+    
+    // Apply compass correction to maintain wall tracking
+    Servo_Value = ((max(min(middle_degree + degree, 360), 180)) / 2);
+    myservo1.write(Servo_Value);
+}
+```
+
+**🔄 Tracking Logic**: When the robot turns, the compass heading changes, so the ultrasonic servo must rotate accordingly to continue pointing at the wall for accurate distance measurements.
+
+---
+
+## 🚧 Obstacle Avoidance System
+
+### 📷 Camera-Based Block Detection
+```cpp
+float calculate_avoidance() {
+    if (camera.isBlockFound()) {
+        BlobData currentBlob = camera.getBlobData();
+        
+        // 📏 Check object dimensions (height > 1.33 × width = likely a block)
+        if (currentBlob.height > 1.33 * float(currentBlob.width)) {
+            found_block = true;
+            
+            // 📐 Calculate block position using camera geometry
+            float distance = (targetHeight * focalLength * 100) / objectHeight;
+            float detected_degree = deltaX * 40 / frameWidth;
+            
+            float blockPositionX = distance * sin(degreesToRadians(detected_degree));
+            float blockPositionY = distance * cos(degreesToRadians(detected_degree)) - 17;
+            
+            // 🎯 Determine avoidance direction
+            if (signature == 1) {
+                // Avoid to the right
+                avoidance_degree = min(radiansToDegree(atan2(blockPositionX + 9, blockPositionY)), -5);
+                Blocks_TURN = 'R';
+            } else {
+                // Avoid to the left  
+                avoidance_degree = max(radiansToDegree(atan2(blockPositionX - 9, blockPositionY)), 5);
+                Blocks_TURN = 'L';
+            }
+        }
+    }
+    return avoidance_degree;
+}
+```
+
+### 🤝 Steering Blend Algorithm
+```cpp
+// Combine normal steering with obstacle avoidance
+int final_degree = map(
+    max(found_block, found_block_factor), 0, 1,
+    steering_degree,  // Normal wall-following steering
+    mapf(min(max(distance_wall, 5), 40), 5, 40, steering_degree, avoidance_degree * 2.5)
+);
+```
+
+---
+
+## 🎮 Control Flow States
+
+### 🔄 Robot Operation Modes
+
+| State | Description | Behavior |
+|-------|-------------|----------|
+| `TURN = 'U'` | 🎯 **Initial/Undefined** | Ready to detect first line and set direction |
+| `TURN = 'L'` | ↩️ **Left Turn Mode** | Follows left wall, turns left at intersections |
+| `TURN = 'R'` | ↪️ **Right Turn Mode** | Follows right wall, turns right at intersections |
+| `found_block = true` | 🚧 **Avoidance Mode** | Temporary obstacle avoidance steering |
+
+### 🎛️ Variable Synchronization
+```cpp
+// Key variables that work together:
+char TURN = 'U';          // Overall robot direction mode
+char Blocks_TURN = 'U';   // Block avoidance direction (synchronized with TURN)
+int x = -1;               // Direction multiplier (-1 for left, +1 for right)
+int Y = 30;               // Target wall distance in cm
+float avoidance_degree;   // Calculated obstacle avoidance angle
+```
+
+---
+
+## 🔬 Mathematical Functions
+
+### 🧮 Angle Wrapping
+```cpp
+float wrap_value(float value, float min_value, float max_value) {
+    float range_val = max_value - min_value;
+    while (value < min_value) value += range_val;
+    while (value > max_value) value -= range_val;
+    return value;  // Keeps angles within -180° to +180°
+}
+```
+
+### 🎯 Motor Speed Control
+```cpp
+void setMotorPercent(int sp) {
+    sp = constrain(sp, -100, 100);  // Limit to ±100%
+    
+    if (sp > 0) {        // Forward
+        digitalWrite(IN1, HIGH);
+        digitalWrite(IN2, LOW);
+        analogWrite(ENA, map(sp, 0, 100, 0, 255));
+    } else if (sp < 0) { // Backward
+        digitalWrite(IN1, LOW);
+        digitalWrite(IN2, HIGH);
+        analogWrite(ENA, map(-sp, 0, 100, 0, 255));
+    } else {             // Stop/Brake
+        digitalWrite(IN1, LOW);
+        digitalWrite(IN2, LOW);
+        analogWrite(ENA, 0);
+    }
+}
+```
+
+---
+
+## 📊 Performance Characteristics
+
+### ⏱️ Timing Parameters
+- **PID Update Rate**: 10ms for smooth control
+- **Avoidance Calculation**: 50ms for responsive obstacle detection  
+- **Turn Duration**: 2-4 seconds depending on maneuver complexity
+- **Line Detection Timeout**: 1000ms between line detections
+
+### 🎚️ Control Parameters
+```cpp
+// PID Tuning
+PID_v2 compassPID(0.6, 0.0001, 0.02, PID::Direct);
+//                ^^^   ^^^^^^  ^^^^
+//                Kp    Ki      Kd
+
+// Speed Control
+setMotorPercent(map(abs(degree), 0, 45, 50, 60));  // 50-60% speed range
+
+// Steering Limits  
+degree = min(max(degree, -40), 40);  // ±40° maximum steering angle
+```
+
+---
+
+## 🎮 User Operation
+
+### 🔘 Button Control Sequence
+1. **Press Button Once**: 🧭 Calibrate compass and initialize sensors
+2. **Release & Press Again**: 🚀 Start autonomous navigation
+3. **Hold Button**: 🛑 Emergency stop during operation
+
+### 🔊 Audio Feedback
+```cpp
+void simpleBeep() {
+    digitalWrite(buzzerPin, HIGH);
+    delay(100);
+    digitalWrite(buzzerPin, LOW);
+}
+```
+- **Single Beep**: System ready or line detected
+- **Continuous Beeping**: Sensor initialization error
+
+---
+
+## 🔄 Algorithm Flow Diagram
+
+```
+START
+  ↓
+🔧 Initialize Hardware & Calibrate Compass
+  ↓
+⏸️ Wait for Button Press
+  ↓
+┌─────────────────────────────────────┐
+│          🔄 MAIN LOOP              │
+├─────────────────────────────────────┤
+│ 1. 📷 Read Camera Data              │
+│ 2. 🧭 Update Compass Heading        │
+│ 3. 🎨 Check Line Sensors            │
+│    ├─ 🔴 Red Line → Turn Right      │
+│    └─ 🔵 Blue Line → Turn Left      │
+│ 4. 📏 Measure Wall Distance         │
+│ 5. 🎛️ Calculate Steering Angle      │
+│ 6. 🚧 Apply Obstacle Avoidance      │
+│ 7. 🎮 Execute Motor & Servo Commands │
+└─────────────────────────────────────┘
+  ↓
+🏁 Continue Until Lap Complete
+```
+
+---
+
+## 📷 Vision System Details
+
+### 🎯 Object Detection Criteria
+```cpp
+// Block detection algorithm
+if (currentBlob.height > 1.33 * float(currentBlob.width)) {
+    found_block = true;  // Object is tall enough to be a block
+    
+    // 📐 Calculate distance using camera focal length
+    float distance = (targetHeight * focalLength * 100) / objectHeight;
+    
+    // 🎯 Determine avoidance direction
+    if (signature == 1) {
+        avoidance_degree = min(radiansToDegree(atan2(blockPositionX + 9, blockPositionY)), -5);
+        Blocks_TURN = 'R';  // Avoid right
+    } else {
+        avoidance_degree = max(radiansToDegree(atan2(blockPositionX - 9, blockPositionY)), 5);
+        Blocks_TURN = 'L';  // Avoid left
+    }
+}
+```
+
+### 📊 Camera Specifications
+- **Frame Size**: 320×150 pixels
+- **FOV**: 70° field of view
+- **Communication**: 19200 baud serial
+- **Detection Range**: Objects 5-40cm distance
+
+---
+
+## 🧭 Compass & Navigation
+
+### 🎯 Why Ultrasonic Servo Uses Compass
+The ultrasonic servo **must rotate with the robot's heading** because:
+
+```cpp
+void ultra_servo(int degree, char mode_steer) {
+    int middle_degree = 0;
+    if (mode_steer == 'R') middle_degree = 360; // 👉 Right wall tracking
+    else if (mode_steer == 'L') middle_degree = 180; // 👈 Left wall tracking
+    
+    // 🧭 Apply compass correction to maintain wall tracking
+    Servo_Value = ((max(min(middle_degree + degree, 360), 180)) / 2);
+    myservo1.write(Servo_Value);
+}
+```
+
+**🔄 Tracking Logic**: When the robot turns, its body rotates but the wall position remains fixed. The servo must counter-rotate to keep pointing at the wall for consistent distance measurements.
+
+### 🎛️ PID Control Integration
+```cpp
+// Compass-based steering calculation
+int steering_degree = (1 * x) * compassPID.Run(
+    (x * pvYaw) +                           // Current heading error
+    ((distance_wall - Y)) *                 // Wall distance error  
+    ((float(Blocks_TURN == 'TURN') - 0.5) * 2)  // Turn direction factor
+) * -1;
+```
+
+---
+
+## 🎨 Line Detection Algorithm
+
+### 🟢 Sensor Reading & Color Discrimination
+```cpp
+void line_detection() {
+    int GEEN_value = analogRead(GEEN_SEN);  // Green sensor reading
+    int red_value = analogRead(RED_SEN);    // Red sensor reading
+    
+    if (GEEN_value < 400 || red_value < 400) {  // Line detected threshold
+        simpleBeep();  // 🔊 Audio confirmation
+        
+        // 🎨 Determine line color by comparing sensor values
+        int lowest_red_sen = red_value;
+        long timer_line = millis();
+        
+        // Sample red sensor for 100ms to get stable reading
+        while (millis() - timer_line < 100) {
+            int red_value = analogRead(RED_SEN);
+            if (red_value < lowest_red_sen) {
+                lowest_red_sen = red_value;
+            }
+        }
+        
+        if (lowest_red_sen > 400) {
+            // 🔴 RED LINE DETECTED → TURN RIGHT
+            executeLeftTurn();   // Robot turns left to follow right wall
+        } else {
+            // 🔵 BLUE LINE DETECTED → TURN LEFT  
+            executeRightTurn();  // Robot turns right to follow left wall
+        }
+    }
+}
+```
+
+### 🔄 Turn Execution Details
+```cpp
+// Turn sequence with compass feedback
+while (millis() - timer_line < 2000) {
+    getBNO();                    // 🧭 Update compass reading
+    steering_servo(-pvYaw);      // 🎯 Counter-steer to maintain heading
+    setMotorPercent(-70);        // ⚡ Reverse motor for tight turn
+}
+```
+
+---
+
+## 🚧 Advanced Features
+
+### ⏱️ Adaptive Timing System
+```cpp
+found_block_factor = min(max(mapf(millis() - timer_block_decay, 0, 1000, 1, 0), 0), 1);
+```
+- Gradually reduces obstacle avoidance influence over time
+- Prevents robot from getting "stuck" in avoidance mode
+- Smooth transition back to normal wall following
+
+### 🎯 Dynamic Speed Control
+```cpp
+void motor_and_steer(int degree) {
+    degree = min(max(degree, -40), 40);  // Limit steering angle
+    steering_servo(degree);
+    
+    // 🏎️ Slower speed for sharp turns, faster for straight driving
+    setMotorPercent(map(abs(degree), 0, 45, 50, 60));
+}
+```
+
+### 🔒 Safety Features
+- **Emergency Stop**: Button hold detection
+- **Sensor Validation**: Range checking and error handling  
+- **Compass Calibration**: Automatic heading reference setup
+- **Turn Completion**: Lap counter prevents infinite running
+
+---
+
+## 🎯 Competition Strategy
+
+### 🏁 Open Challenge Objectives
+- ✅ **Autonomous Navigation**: No remote control allowed
+- ✅ **Line Recognition**: React correctly to red/blue turn indicators  
+- ✅ **Wall Following**: Maintain consistent track positioning
+- ✅ **Obstacle Avoidance**: Navigate around randomly placed blocks
+- ✅ **Lap Completion**: Complete 3 laps successfully
+
+### 🎖️ Key Success Factors
+1. **🎯 Precise Calibration**: Compass zeroing and sensor thresholds
+2. **⚖️ Balanced Control**: PID tuning for stable yet responsive steering  
+3. **🔄 State Management**: Proper synchronization of turn modes and variables
+4. **📷 Robust Vision**: Reliable block detection and distance estimation
+5. **🛡️ Error Recovery**: Timeout mechanisms and fail-safe behaviors
+
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+```cpp
+#include "Mapf.h"
+#include "Servo.h" 
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+#include "CameraHandler.h"
+#include <PID_v2.h>
+#include <NeoSWSerial.h>
+```
+
+### 🔧 Setup Steps
+1. **🔌 Wire Hardware**: Connect all components according to pin configuration
+2. **📚 Install Libraries**: Ensure all required libraries are installed
+3. **🧭 Calibrate Compass**: Place robot on level surface for IMU calibration  
+4. **📷 Configure Camera**: Set up OpenMV camera for blob detection
+5. **🎯 Test Sensors**: Verify all sensor readings are within expected ranges
+6. **▶️ Upload & Run**: Upload code and press button to start
+
+---
+
+## ⚡ Technical Specifications
+
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| **Control Loop Rate** | 🔄 ~100Hz | Main loop execution frequency |
+| **PID Sample Time** | ⏱️ 10ms | Compass control update rate |
+| **Avoidance Update** | 📷 50ms | Camera processing interval |  
+| **Turn Timeout** | ⏳ 2-4s | Maximum time for turn execution |
+| **Max Steering Angle** | 🎯 ±40° | Servo steering limit |
+| **Speed Range** | 🏎️ 50-60% | Motor speed based on turn angle |
+| **Wall Target Distance** | 📏 30cm | Optimal wall following distance |
+| **Line Detection Threshold** | 🎨 <400 | Analog sensor trigger level |
+
+---
+
+## 🏆 Future Engineer 2025 Ready!
+
+This autonomous driving system implements all the core requirements for the **Future Engineer Open Challenge**:
+- ✅ Bidirectional navigation capability  
+- ✅ Color-based turn decision making
+- ✅ Precise wall following with ultrasonic feedback
+- ✅ Intelligent obstacle avoidance using computer vision
+- ✅ Robust compass-based heading control
+- ✅ Fail-safe mechanisms and user controls
+
+**🚗💨 Ready to race and navigate autonomously! 🏁**
