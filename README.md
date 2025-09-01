@@ -1557,7 +1557,8 @@ void ultra_servo(int degree, char mode_steer) {
 
 **🔄 Tracking Logic**: When the robot turns, the compass heading changes, so the ultrasonic servo must rotate accordingly to continue pointing at the wall for accurate distance measurements.
 
-Yotube link:
+[First Round clip](https://youtu.be/TkWOwLYxJJ0)
+
 ---
 
 ## 🚧 Obstacle Avoidance System
