@@ -47,7 +47,7 @@
   - [Step-down: HW-360 V6.0](#step-down--hw-360-v60)
   - [ZX-Switch01](#zx-switch01)
 - [WRO Future Engineers 2025 - Robot Components & Budget](wro-future-engineers-2025---robot-components--budget)
-  - - [Programming](#programing)
+- [Programming](#programing)
   - [🚗 Future Engineer 2025 - Self-Driving Car Robot](#-future-engineer-2025---self-driving-car-robot)
   - [🎯 Mission Overview](#-mission-overview)
   - [🏗️ System Architecture](#%EF%B8%8F-system-architecture)
