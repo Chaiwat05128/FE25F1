@@ -45,7 +45,9 @@
   - [FIREFOX Li-Polymer BATTERY 20C 1300mAh/11.1V](#firefox-li-polymer-batterry-20c-1300mah111v)
   - [On/Off Switch](#onoff-switch--spst-onoff-switch-2-pin-rocker-switch-dc-125250v)
   - [Step-down: HW-360 V6.0](#step-down--hw-360-v60)
-- [Programming](#programing)
+  - [ZX-Switch01](#zx-switch)
+- [WRO Future Engineers 2025 - Robot Components & Budget](wro-future-engineer-2025-robot-component-budget)
+  - - [Programming](#programing)
   - [🚗 Future Engineer 2025 - Self-Driving Car Robot](#-future-engineer-2025---self-driving-car-robot)
   - [🎯 Mission Overview](#-mission-overview)
   - [🏗️ System Architecture](#%EF%B8%8F-system-architecture)
@@ -513,7 +515,9 @@ We use the **Geek Servo 360**, a compact yet powerful servo motor with:
 <p align="center">
 <img width="600" height="600" alt="Greek servo" src="https://github.com/user-attachments/assets/49665430-7fd6-42ca-9f63-365dcc6b2665" /> 
 
-The **Geek Servo 360** is the core of our **steering system**. When designing our robot, we needed a servo that could combine **LEGO compatibility, compact size, and reliable torque**. After testing multiple options, we selected the Geek Servo 360 because it gives us the **perfect balance between speed, strength, and precision**.  
+The Geek Servo 360 is the heart of our steering system. During the design process, we needed a servo that combined LEGO compatibility, compact size, and reliable torque. After testing several options, we chose the Geek Servo 360 because it provides the ideal balance of speed, strength, and precision.
+
+In addition to steering, we also use it to control the ultrasonic sensor, adjusting its angle based on BNO055 error calculations to ensure accurate obstacle detection and navigation..  
 
 - 🏎️ **Designed for LEGO systems** → snaps directly into our chassis without complex mounts  
 - ⚡ **Fast response (0.14s/60°)** → quick steering corrections, ideal for sharp curves on the WRO track  
@@ -1143,6 +1147,8 @@ BMP280：
 <p align="center">
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/047d6eb7-2788-4f0e-a70d-8967dff2d8a0" />
 
+🔗 [SEN 0253](https://wiki.dfrobot.com/Gravity_BNO055_%2B_BMP280%20intelligent_10DOF_AHRS_SKU_SEN0253)
+
 ---
 
 # Controller
@@ -1205,6 +1211,8 @@ It provides a simple yet powerful platform for building embedded and robotic sys
 | **Other Interfaces**   | ICSP header, power jack, reset button                                        |
 | **Dimensions**         | 68.6 mm × 53.4 mm                                                            |
 | **Weight**             | ~25 g                                                                        |
+
+🔗 [UNO R3](https://docs.arduino.cc/hardware/uno-rev3/)
 
 ---
 
@@ -1291,6 +1299,8 @@ void loop() {
 }
 ```
 
+🔗 [L298P DC Motor Drive Shield](https://www.arduitronics.com/product/2165/l298p-dc-motor-drive-shield-expansion-board)
+
 ---
 
 ### Uno R3 Sensor Shield V5.0 for Arduino
@@ -1311,6 +1321,8 @@ It allows us to quickly swap or test different sensors without rewiring the enti
 
 <p align="center">
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/c48351a4-7f28-4b8b-8f7f-a07bc2193c24" />
+
+🔗 [Uno R3 Sensor Shield V5.0 for Arduino](https://www.arduitronics.com/product/107/arduino-uno-r3-sensor-shield-v5-0)
 
 --- 
 
@@ -1342,12 +1354,17 @@ This makes the Firefox battery the best balance between **power, stability, and 
 | **Width**          | 4.2 cm                   |
 | **Thickness**      | 1.6 cm                   |
 
+🔗 [FIREFOX Li-Polymer BATTERRY 20C 1300mAh/11.1V](https://shopee.co.th/%E0%B9%81%E0%B8%9A%E0%B8%95-Li-po-Firefox-20c-1300mAh-11.1v(%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%95)-i.649460339.10883199883
+)
+
 ---
 
 ##On/Off Switch : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
 This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. 
 
 <img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/On-off%20Switch.png" width = "400">
+
+🔗 [On/Off Switch : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V](https://shopee.co.th/product/96535372/27489774822?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVzBLS2xuUGZzMlQ5NjlFWklmRkZjVFVoaHdZMDhTUVRuZUdwNVJ0NytPRmh0d3E0WEhXTG53Y01uTjNDYVhibEpkMkJoQ25DYUdKRW1qc2RKZWhzQVZkd0d2NExaOTdjTE9sb2htWmQ1SVA)
 
 ---
 
@@ -1389,7 +1406,10 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 | Load regulation         | S (I) ≤ 0.8%                           |
 | Voltage Regulation      | S (u) ≤ 0.8%                           |
 
+🔗 [HW-360 V6.0](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChsSEwjr_djaqLqPAxWNpGYCHQkKAaUYACICCAEQAxoCc20&co=1&ase=2&gclid=CjwKCAjwq9rFBhAIEiwAGVAZP1Pm2-vayERWQDh-QJ_CiljyOc1_YwWPG4_fl-kqPCBVHlEaaXOlpRoCD8cQAvD_BwE&ohost=www.google.com&cid=CAESVeD2Mof_4vuqUCeugBp_ZQaxZ-18hZ7bKrF-m31g6mrUonj_oilASijpMuCbgvEp5-ssNBCxPa255qhjPvY-RB_1k-8gnk0QTwEZwgzsZFy5ZegRYOg&category=acrcp_v1_40&sig=AOD64_34NmBxU05_vsHegYVFoUH_exNnsQ&ctype=5&q=&nis=7&ved=2ahUKEwjt3NLaqLqPAxWCzjgGHfJBANUQ9A4oAnoECAgQCg&ch=1&adurl=)
+
 ---
+
 ## ZX-Switch01
 
 <img width="400" height="400" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (63)" src="https://github.com/user-attachments/assets/9effeea6-b5ea-4a13-8c78-1b2191098283" />
@@ -1406,6 +1426,76 @@ At the same time, current flows through the LED and resistor R1, causing the LED
 In addition, the DATA pin can also function as an input, allowing the LED to be controlled (turned on or off) as desired.
 
 🔗 [View ZX-Switch]([https://openmv.io/products/openmv-cam-h7](https://inex.co.th/home/product/zx-switch01/))
+
+---
+
+# WRO Future Engineers 2025 - Robot Components & Budget
+
+## 📋 Complete Product List
+
+### **Drive System & Motors**
+| Component | Model/Type | Price (USD) | Quantity | Total (USD) | Function |
+|-----------|------------|-------------|----------|-------------|----------|
+| Chihai Motor 25-370K | DC Geared Motor 12V, 1:20 ratio, 225mN·m torque | $15 - $25 | 1 | $15 - $25 | Main drive motor |
+| LEGO Technic Differential | Housing (65414), 12T Bevel (6589), 28T Double Bevel (65413) | $30 - $50 | 1 set | $30 - $50 | Torque distribution to rear wheels |
+| Geek Servo 360 | 360° rotation, 1.6 kg·cm torque, LEGO compatible | $15 - $25 | 2 | $30 - $50 | Ackermann steering control |
+
+### **Controllers & Electronics**
+| Component | Model/Type | Price (USD) | Quantity | Total (USD) | Function |
+|-----------|------------|-------------|----------|-------------|----------|
+| Arduino Uno R3 | ATmega328P, 16MHz, 14 digital I/O pins | $25 - $35 | 1 | $25 - $35 | Main microcontroller |
+| L298P Motor Driver Shield | Dual H-bridge, 2A per channel | $8 - $15 | 1 | $8 - $15 | DC motor control with PWM |
+| Sensor Shield V5.0 | Arduino expansion board with 3-pin headers | $5 - $10 | 1 | $5 - $10 | Sensor connection hub |
+
+### **Sensors & Detection**
+| Component | Model/Type | Price (USD) | Quantity | Total (USD) | Function |
+|-----------|------------|-------------|----------|-------------|----------|
+| OpenMV Cam H7 | STM32H743VI ARM Cortex M7, machine vision | $85 - $120 | 1 | $85 - $120 | Color detection, parking recognition |
+| Gravity URM09 | Ultrasonic sensor, 2-500cm range, temperature compensation | $12 - $18 | 1 | $12 - $18 | Wall tracking, distance measurement |
+| ZX-03 IR Sensors | TCRT5000 reflective sensors (red & blue versions) | $3 - $5 | 2 | $6 - $10 | Line following detection |
+| SEN0253 (BNO055+BMP280) | 10DOF AHRS with gyro, accel, magnetometer | $35 - $50 | 1 | $35 - $50 | Stable orientation sensing |
+| ZX-Switch01 | Push button with LED indicator | $2 - $4 | 1 | $2 - $4 | Robot start button |
+
+### **Power Management**
+| Component | Model/Type | Price (USD) | Quantity | Total (USD) | Function |
+|-----------|------------|-------------|----------|-------------|----------|
+| Firefox Li-Polymer Battery | 11.1V, 1300mAh, 20C discharge rate | $25 - $40 | 1 | $25 - $40 | Main power source |
+| SPST Rocker Switch | ON/OFF switch, 2-pin, DC 125/250V | $2 - $5 | 1 | $2 - $5 | Power cutoff (regulation compliance) |
+| HW-360 V6.0 Step-down | DC-DC converter with voltage display, 4-38V input | $8 - $12 | 1 | $8 - $12 | Voltage regulation & monitoring |
+
+### **Wheels & Mechanical**
+| Component | Model/Type | Price (USD) | Quantity | Total (USD) | Usage |
+|-----------|------------|-------------|----------|-------------|-------|
+| LEGO Wheel Set (30.4mm) | Gray wheels + black tires (43.2×22) | $25 - $35 | 1 set | $25 - $35 | Front steering wheels |
+| LEGO Wheel Set (49.5×20) | Light gray wheels + black tires | $30 - $40 | 1 set | $30 - $40 | Rear drive wheels |
+
+### **3D Printed Parts** *(Material Cost Only)*
+| Component | Material | Estimated Cost (USD) | Function |
+|-----------|----------|---------------------|----------|
+| Servo Bracket | ABS | $2 - $3 | Secure servo mounting |
+| Drive Bearing 1 & 2 | ABS | $5 - $8 | Motor housing & gear system |
+| Bearing Spacer 1 & 2 | ABS | $1 - $2 | Precise bearing alignment |
+| Steering Components | ABS | $3 - $5 | Ackermann steering mechanism |
+| Custom Gears | PLA | $2 - $4 | Torque transmission system |
+
+---
+
+## 💰 **Budget Summary**
+
+### **Component Categories**
+```
+Drive System & Motors:      $60 - $100
+Controllers & Electronics:  $38 - $60  
+Sensors & Detection:        $140 - $202
+Power Management:           $35 - $57
+Wheels & Mechanical:        $55 - $75
+3D Printing Materials:      $13 - $22
+```
+
+### **Total Project Cost**
+```
+ROBOT COMPONENTS TOTAL: $356 - $541 USD
+```
 
 ---
 
