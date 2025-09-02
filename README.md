@@ -45,7 +45,7 @@
   - [FIREFOX Li-Polymer BATTERY 20C 1300mAh/11.1V](#firefox-li-polymer-batterry-20c-1300mah111v)
   - [On/Off Switch](#onoff-switch--spst-onoff-switch-2-pin-rocker-switch-dc-125250v)
   - [Step-down: HW-360 V6.0](#step-down--hw-360-v60)
-  - [ZX-Switch01](#zx-switch)
+  - [ZX-Switch01](#zx-switch01)
 - [WRO Future Engineers 2025 - Robot Components & Budget](wro-future-engineers-2025---robot-components--budget)
   - - [Programming](#programing)
   - [🚗 Future Engineer 2025 - Self-Driving Car Robot](#-future-engineer-2025---self-driving-car-robot)
@@ -1359,7 +1359,7 @@ This makes the Firefox battery the best balance between **power, stability, and 
 
 ---
 
-##On/Off Switch : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
+## On/Off Switch : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
 This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. 
 
 <img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/On-off%20Switch.png" width = "400">
