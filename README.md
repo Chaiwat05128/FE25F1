@@ -1390,6 +1390,24 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 | Voltage Regulation      | S (u) ≤ 0.8%                           |
 
 ---
+## ZX-Switch01
+
+<img width="400" height="400" alt="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (63)" src="https://github.com/user-attachments/assets/9effeea6-b5ea-4a13-8c78-1b2191098283" />
+
+This button gives us an easier way to start the robot. Since the
+controller board doesn't come with switches. So we found this button
+that could be attached to the frame outside the board using bolt.
+
+**Description**
+
+When the switch is not pressed, the DATA pin is pulled up to logic “1” by resistor R2.
+When the switch is pressed, the DATA pin goes to logic “0” because the switch shorts it to ground.
+At the same time, current flows through the LED and resistor R1, causing the LED to light up.
+In addition, the DATA pin can also function as an input, allowing the LED to be controlled (turned on or off) as desired.
+
+🔗 [View ZX-Switch]([https://openmv.io/products/openmv-cam-h7](https://inex.co.th/home/product/zx-switch01/))
+
+---
 
 # Programing
 
