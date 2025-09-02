@@ -46,7 +46,7 @@
   - [On/Off Switch](#onoff-switch--spst-onoff-switch-2-pin-rocker-switch-dc-125250v)
   - [Step-down: HW-360 V6.0](#step-down--hw-360-v60)
   - [ZX-Switch01](#zx-switch)
-- [WRO Future Engineers 2025 - Robot Components & Budget](wro-future-engineer-2025-robot-component-budget)
+- [WRO Future Engineers 2025 - Robot Components & Budget](wro-future-engineers-2025---robot-components--budget)
   - - [Programming](#programing)
   - [🚗 Future Engineer 2025 - Self-Driving Car Robot](#-future-engineer-2025---self-driving-car-robot)
   - [🎯 Mission Overview](#-mission-overview)
